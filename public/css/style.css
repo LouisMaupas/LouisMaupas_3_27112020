@@ -40,6 +40,23 @@ button {
   border: 1px solid black;
   border-radius: 3px;
   padding: 1em;
+  background-color: #eae8eb;
+  z-index: 1;
+  position: relative;
+}
+.operation-steps-thumbnail:hover::after {
+  opacity: 1;
+}
+.operation-steps-thumbnail::after {
+  content: "";
+  opacity: 0;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(206, 195, 216, 0.76);
 }
 .operation-steps-thumbnail__logo {
   display: flex;
@@ -55,7 +72,7 @@ button {
 }
 
 #restaurants {
-  background-color: rgba(206, 195, 216, 0.76);
+  background-color: #eae8eb;
 }
 
 /* mediaquery*/
