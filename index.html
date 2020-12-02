@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/9405848609.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./public/css/flexbox.css" rel="stylesheet">
@@ -8,10 +9,19 @@
     <title>Ohmyfood!</title>
 </head>
 <body>
+
+    <!-- LOADING PAGE-->
+    <div class="loading"></div>
+    <!---->
     <div class="container">
-        <header class="main-head">Logo ohmyfood</header>
+        <!---->
+        <header class="main-head"><img src="./public/img/logo/ohmyfood2x.svg" alt="Logo de Oh my food !"/></header>
+        <!-- TOP -->
         <div class="gps">
-            <div class="gps__gps"></div>
+            <div class="gps__gps df jc-sa">
+                <div><i class="fas fa-map-marker-alt"></i></div>
+                <div>Paris, Belleville</div> 
+            </div>
             <div class="gps-explore">
                 <div class="gps-explore__txt">
                     <h1>Réservez le menu qui vous convient</h1>
@@ -21,35 +31,96 @@
                 <div class="btn"></div>
             </div>
         </div>
+        <!-- " FONCTIONNEMENT " -->
         <div class="operation">
             <h2>Fonctionnement</h2>
-            <div class="operation__thumbnail">
-                Choisissez un restaurant
-            </div>
-            <div class="operation__thumbnail">
-                Composez votre menu
-            </div>
-            <div class="operation__thumbnail">
-                Dégustez au restaurant
-            </div>
+            <div class="operation-steps">
+
+
+
+                <div class="operation-steps-thumbnail df jc-se">
+                    <div class="operation-steps-thumbnail__logo">1</div>
+                    <div><i class="fas fa-mobile-alt"></i></div>
+                    <div>Choisissez un restaurant</div>
+                </div>
+
+
+                <div class="operation__thumbnail">
+                    Composez votre menu
+                </div>
+                <div class="operation__thumbnail">
+                    Dégustez au restaurant
+                </div>
+            </div> 
         </div>
-        <div class="restaurants">
+        <!-- RESTAURANTS -->
+        <div id="restaurants">
             <h2>Restaurants</h2>
-            <div class="restaurants-thumbnails">
-                <div class="restaurants__thumbnails">
-                    <a href="">restaurant</a>
+            <div class="restaurants-thumbnails df fw-w">
+                <!--THUMBNAIL 1 -->
+                <div class="restaurants-thumbnails-thumbnail">
+                    <a>
+                        <div>
+                            <div><img src="./public/img/restaurants/louis.jpg" alt="photo de la chambre 1"/></div>
+                            <div class="df jc-sb">
+                                <div>
+                                    <div>Le délice des sens</div>
+                                    <div>Folie-Méricourt</div>
+                                </div>
+                                <div class="logo" style="color: #000;"><i class="far fa-heart"></i></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="restaurants__thumbnails">
-                    <a href="">restaurant</a>
+                <!--THUMBNAIL 2 -->
+                <div class="restaurants-thumbnails-thumbnail">
+                    <a>
+                        <div>
+                            <div><img src="./public/img/restaurants/louis.jpg" alt="photo de la chambre 1"/></div>
+                            <div class="df jc-sb">
+                                <div>
+                                    <div>Le délice des sens</div>
+                                    <div>Folie-Méricourt</div>
+                                </div>
+                                <div class="logo" style="color: #000;"><i class="far fa-heart"></i></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="restaurants__thumbnails">
-                    <a href="">restaurant</a>
+                <!--THUMBNAIL 3 -->
+                <div class="restaurants-thumbnails-thumbnail">
+                    <a>
+                        <div>
+                            <div><img src="./public/img/restaurants/louis.jpg" alt="photo de la chambre 1"/></div>
+                            <div class="df jc-sb">
+                                <div>
+                                    <div>Le délice des sens</div>
+                                    <div>Folie-Méricourt</div>
+                                </div>
+                                <div class="logo" style="color: #000;"><i class="far fa-heart"></i></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
-                <div class="restaurants__thumbnails">
-                    <a href="">restaurant</a>
+                <!--THUMBNAIL 4 -->
+                <div class="restaurants-thumbnails-thumbnail">
+                    <a>
+                        <div>
+                            <div><img src="./public/img/restaurants/louis.jpg" alt="photo de la chambre 1"/></div>
+                            <div class="df jc-sb">
+                                <div>
+                                    <div>Le délice des sens</div>
+                                    <div>Folie-Méricourt</div>
+                                </div>
+                                <div class="logo" style="color: #000;"><i class="far fa-heart"></i></div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+                <!---->
             </div>
         </div>
+        <!---->
         <footer class="main-footer">
             Footer
         </footer>

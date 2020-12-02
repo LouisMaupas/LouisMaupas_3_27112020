@@ -2,7 +2,6 @@
 @import "./utils/functions";
 @import "./utils/mixins";
 @import "./utils/extensions";
-@import "./utils/mediaqueries";
 
 @import "./base/base";
 @import "./base/typography";
@@ -13,6 +12,7 @@
 @import "./layout/nav";
 @import "./layout/container";
 @import "./layout/form";
+@import "./layout/thumbnails";
 
 
 @import "./pages/index";
