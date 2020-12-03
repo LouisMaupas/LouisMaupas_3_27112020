@@ -58,6 +58,13 @@ textarea {
   object-fit: cover;
 }
 
+.main-head {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+
 .main-footer {
   padding-left: 2em;
   padding-top: 1em;
@@ -101,6 +108,7 @@ textarea {
   width: 300px;
   height: 240px;
   background: white;
+  box-shadow: 0px 0px 11px 5px rgba(155, 144, 144, 0.884);
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
   border-bottom-left-radius: 15px;
@@ -114,10 +122,22 @@ textarea {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+.restaurants-thumbnails-thumbnail--txt {
+  margin-left: 1em;
+  margin-right: 6em;
+}
+.restaurants-thumbnails-thumbnail--name {
+  font-weight: bold;
+}
+.restaurants-thumbnails-thumbnail .logo {
+  display: flex;
+  align-items: center;
+}
 
 /* STEPS */
 .operation-steps-thumbnail {
-  min-width: 280px;
+  width: 280px;
+  height: 27px;
   border: 1px solid black;
   border-radius: 3px;
   padding: 1em;
@@ -127,6 +147,9 @@ textarea {
   /*
   &__txt {
       cursor: pointer;*/
+}
+.operation-steps-thumbnail:nth-child(2) {
+  margin: 1em 1em;
 }
 .operation-steps-thumbnail:hover::after {
   opacity: 1;
@@ -156,25 +179,6 @@ textarea {
   margin-left: -26px;
 }
 
-#restaurants {
-  background-color: #eae8eb;
-  padding-top: 1em;
-}
-#restaurants h2 {
-  display: inline-block;
-  margin-left: 2em;
-}
-
-.restaurants-thumbnails {
-  margin: auto;
-  width: 90%;
-  height: auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 300px);
-  justify-content: center;
-  gap: 1em;
-}
-
 /* GPS*/
 .gps {
   background-color: rgba(156, 133, 176, 0.76);
@@ -191,14 +195,31 @@ textarea {
   margin-bottom: 3em;
 }
 
-/* "FONCTIONNEMENT*/
-.operation-steps-thumbnail {
-  margin: auto 1em;
+/*FONCTIONNEMENT*/
+.operation h2 {
+  margin-left: 1.5em;
 }
 
 /* RESTAURANTS */
-.operation-steps-thumbnail {
-  margin: 0.5em auto 0.5em auto;
+#restaurants {
+  background-color: #eae8eb;
+  padding-top: 1em;
+  margin-top: 3em;
+}
+#restaurants h2 {
+  display: inline-block;
+  margin-left: 2em;
+}
+
+.restaurants-thumbnails {
+  margin: auto;
+  width: 90%;
+  height: auto;
+  padding-bottom: 3em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  gap: 2.1em;
 }
 
 /* mediaquery*/
@@ -208,6 +229,11 @@ textarea {
     max-width: 1450px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .operation h2 {
+    display: flex;
+    justify-content: center;
   }
 }
 /* PAD */
@@ -224,7 +250,6 @@ textarea {
     max-width: 380px;
     margin-left: auto;
     margin-right: auto;
-    border: 1px solid red;
   }
 
   .operation-steps {

@@ -1,25 +1,4 @@
-#restaurants {
-    background-color: $color-fourth;
-    padding-top: 1em;
-    & h2 {
-        display: inline-block;
-        margin-left: 2em;
-    }
-}
-
-
-.restaurants-thumbnails {
-    margin: auto;
-    width: 90%;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    justify-content: center;
-    gap: 1em;
-}
-
 /* GPS*/
-
 .gps {
     background-color: $color-sixth;
     &-explore{
@@ -36,18 +15,36 @@
     }
 }
 
-/* "FONCTIONNEMENT*/ 
-.operation-steps-thumbnail {
-    margin: auto 1em;
+/*FONCTIONNEMENT*/ 
+.operation h2 {
+    margin-left: 1.5em;
 }
 
 
 /* RESTAURANTS */
-.operation-steps {
-    &-thumbnail {
-        margin: 0.5em auto 0.5em auto;
+#restaurants {
+    background-color: $color-fourth;
+    padding-top: 1em;
+    margin-top: 3em;
+    & h2 {
+        display: inline-block;
+        margin-left: 2em;
     }
 }
+
+.restaurants-thumbnails {
+    margin: auto;
+    width: 90%;
+    height: auto;
+    padding-bottom: 3em;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    justify-content: center;
+    gap: 2.1em;
+}
+
+
+
 
 /* mediaquery*/
 /* DESKTOP */ 
@@ -56,6 +53,10 @@
     max-width: 1450px;
     margin-left: auto;
     margin-right: auto;
+    }
+    .operation h2 {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -75,7 +76,6 @@
         max-width: 380px;
         margin-left: auto;
         margin-right: auto;
-        border: 1px solid red;
         }
     
     .operation-steps {
