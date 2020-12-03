@@ -78,20 +78,41 @@ textarea {
 }
 
 /* RESTAURANTS */
+/*
 .restaurants-thumbnails {
-  background-color: white;
+    background-color: white;
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    &-thumbnail {
+        border: 10px solid green;
+        margin: auto;
+        max-width: 350px;
+        max-height: 230px;
+        & img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+    }
+}*/
+.restaurants-thumbnails {
+  border: 10px solid green;
   width: 90%;
   height: auto;
-  margin-left: auto;
-  margin-right: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-content: center;
+  gap: 1em;
 }
 .restaurants-thumbnails-thumbnail {
-  margin: auto;
+  background: rgba(12, 1, 32, 0.205);
+  cursor: pointer;
 }
 .restaurants-thumbnails-thumbnail img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
+  width: 300px;
+  height: 200px;
 }
 
 /* STEPS */
