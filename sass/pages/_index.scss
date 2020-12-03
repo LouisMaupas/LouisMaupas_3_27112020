@@ -3,6 +3,23 @@
 }
 
 
+/* GPS*/
+
+.gps {
+    background-color: $color-sixth;
+    &-explore{
+        background-color: $color-fifth;
+    & h1, & div {
+        width: 80%;
+        text-align: center;
+    }
+    & button {
+        margin: 1em auto 3em;
+    }
+
+    }
+}
+
 /* "FONCTIONNEMENT*/ 
 .operation-steps-thumbnail {
     margin: auto 1em;
