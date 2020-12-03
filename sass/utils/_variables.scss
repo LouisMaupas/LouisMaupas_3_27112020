@@ -1,7 +1,7 @@
 $color-primary: #9356DC;
-$color-primary-lighten: lighten($color-primary);
+$color-primary-lighten: lighten($color-primary, 20%);
 $color-secondary: #FF79DA;
-$color-secondary-lighten: lighten($color-secondary);
+$color-secondary-lighten: lighten($color-secondary, 20%);
 
 $color-third: #99E2D0;
 $color-fourth: rgb(234, 232, 235);
