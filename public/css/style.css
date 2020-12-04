@@ -221,7 +221,7 @@ textarea {
   gap: 2.1em;
 }
 
-/* mediaquery*/
+/* mediaquery A EXPORTER SAUF :*/
 /* DESKTOP */
 @media (min-width: 1415px) {
   .container {
@@ -256,5 +256,10 @@ textarea {
     align-items: center;
   }
 }
+/* mediaquery A EXPORTER SAUF :*/
+/* DESKTOP */
+/* DESKTOP */
+/* PAD */
+/* MOBILE */
 
 /*# sourceMappingURL=style.css.map */

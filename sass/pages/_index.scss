@@ -46,7 +46,7 @@
 
 
 
-/* mediaquery*/
+/* mediaquery A EXPORTER SAUF :*/
 /* DESKTOP */ 
 @media (min-width: 1415px){
     .container {
@@ -54,7 +54,7 @@
     margin-left: auto;
     margin-right: auto;
     }
-    .operation h2 {
+    .operation h2 { // A LAISSER DANS CETTE PAGE
         display: flex;
         justify-content: center;
     }
@@ -78,7 +78,7 @@
         margin-right: auto;
         }
     
-    .operation-steps {
+    .operation-steps { // A LAISSER DANS CETTE PAGE
         flex-direction: column;
         align-items: center;
     }
