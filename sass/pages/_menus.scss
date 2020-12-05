@@ -7,6 +7,20 @@
         object-fit: cover;
 }
 
+.menu {
+    background-color: $color-fifth;
+    margin-top: -1em;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    &-menus-step {
+    border: 1px solid black;
+    max-width: 550px;
+    }
+    &__title {
+        border-bottom: 4px solid rgb(46, 221, 221);
+    }
+}
+
 
 
 
