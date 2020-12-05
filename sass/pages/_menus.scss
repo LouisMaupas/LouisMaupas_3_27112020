@@ -12,13 +12,22 @@
     margin-top: -1em;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    &-menus-step {
-    border: 1px solid black;
-    max-width: 550px;
+    &-menus {
+        border: 3px solid yellow;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 378px);
+        gap: 2.1em;
+        margin: auto;
+        width: 98%;
+        &-step {
+        border: 1px solid black;
+        max-width: 550px;
+        justify-self: center;
     }
     &__title {
         border-bottom: 4px solid rgb(46, 221, 221);
     }
+}
 }
 
 
