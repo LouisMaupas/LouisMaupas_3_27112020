@@ -1,7 +1,5 @@
 body {
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  line-height: 1.7;
 }
 
 h1, h2, h3, .title {
@@ -91,6 +89,9 @@ textarea {
 }
 .main-footer ul li {
   display: inline-block;
+}
+.main-footer ul li i {
+  margin-right: 0.5em;
 }
 
 /* RESTAURANTS */
