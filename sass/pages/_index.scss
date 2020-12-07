@@ -1,17 +1,26 @@
 /* GPS*/
 .gps {
     background-color: $color-sixth;
-    &-explore{
+    &__gps:nth-child(1) {
+        font-weight: bold;
+        margin: 1em;
+        & div:nth-child(2) {
+            margin-left: 1em;
+        }
+    }
+    &-explore {
         background-color: $color-fifth;
-    & h1, & div {
-        width: 80%;
-        text-align: center;
-    }
-    & button {
-        margin-top: 1em;
-        margin-bottom: 3em;
-    }
-
+        & > div {
+            color: rgb(87, 84, 84);
+        }
+        & h1, & div {
+            width: 80%;
+            text-align: center;
+        }
+        & button {
+            margin-top: 1em;
+            margin-bottom: 3em;
+        }
     }
 }
 
