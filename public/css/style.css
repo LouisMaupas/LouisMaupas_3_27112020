@@ -89,6 +89,7 @@ textarea {
 }
 .main-footer ul li {
   display: inline-block;
+  line-height: 2em;
 }
 .main-footer ul li i {
   margin-right: 0.5em;
