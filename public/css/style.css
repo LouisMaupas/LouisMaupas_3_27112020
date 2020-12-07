@@ -4,10 +4,8 @@ body {
   line-height: 1.7;
 }
 
-h1, h2 {
+h1, h2, h3, .title {
   font-family: "Shrikhand", sans-serif;
-  font-weight: 900;
-  font-size: 1.5rem;
 }
 
 textarea {
@@ -191,7 +189,7 @@ textarea {
 
 /* MENUS */
 .menu-menus-step {
-  /*width: 378px;*/
+  width: 378px;
 }
 .menu-menus-step__title {
   margin-left: 0.5em;
@@ -297,31 +295,42 @@ textarea {
 }
 
 .restaurants-pic img {
+  z-index: -1;
+  position: relative;
   max-height: 700px;
   object-fit: cover;
 }
 
 .menu {
+  padding-top: 1em;
   background-color: rgba(206, 195, 216, 0.76);
-  margin-top: -1em;
+  margin-top: -4em;
+  padding-bottom: 4em;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
 }
+.menu-title {
+  font-size: 1.8em;
+  justify-content: space-around;
+}
 .menu-menus {
-  border: 3px solid yellow;
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 378px);
-  gap: 2.1em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   margin: auto;
+  margin-bottom: 2em;
   width: 98%;
 }
 .menu-menus-step {
-  border: 1px solid black;
+  align-self: center;
   max-width: 550px;
-  justify-self: center;
 }
-.menu-menus__title {
+.menu-menus-step__title {
   border-bottom: 4px solid #2edddd;
+}
+.menu button {
+  align-self: center;
+  width: 200px;
 }
 
 /* mediaquery A EXPORTER SAUF :*/

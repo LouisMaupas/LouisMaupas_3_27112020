@@ -3,31 +3,42 @@
 }
 
 .restaurants-pic img {
+        z-index: -1;
+        position: relative;
         max-height: 700px; 
         object-fit: cover;
 }
 
 .menu {
+    padding-top: 1em;
     background-color: $color-fifth;
-    margin-top: -1em;
+    margin-top: -4em;
+    padding-bottom: 4em;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
+    &-title {
+        font-size: 1.8em;
+        justify-content: space-around;
+    }
     &-menus {
-        border: 3px solid yellow;
-        display: grid;
-        grid-template-columns: repeat(auto-fill, 378px);
-        gap: 2.1em;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
         margin: auto;
+        margin-bottom: 2em;
         width: 98%;
         &-step {
-        border: 1px solid black;
+        align-self: center;
         max-width: 550px;
-        justify-self: center;
+            &__title {
+                border-bottom: 4px solid rgb(46, 221, 221);
+            }
+        }    
     }
-    &__title {
-        border-bottom: 4px solid rgb(46, 221, 221);
+    & button {
+        align-self: center;
+        width: 200px;
     }
-}
 }
 
 
