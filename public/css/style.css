@@ -187,6 +187,9 @@ textarea {
   margin-right: 1em;
   margin-left: -25px;
 }
+.operation-steps-thumbnail i {
+  margin-right: 1em;
+}
 
 /* MENUS */
 .menu-menus-step {
