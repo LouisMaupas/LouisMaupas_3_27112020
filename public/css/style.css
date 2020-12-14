@@ -15,33 +15,15 @@ textarea {
 .btn {
   cursor: pointer;
   font-size: 1.5rem;
-  box-shadow: 0px 5px 5px lightgrey;
   padding: 15px;
   border-radius: 30px;
   font-size: 1rem;
   color: white;
+  border: none;
+  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 50%, #ab5edc 75%, #9b59dc 100%);
 }
-.btn--gradient {
-  background: linear-gradient(173deg, #ff79da 0%, #d66cdb 39%, #ab5edc 85%, #9b59dc 100%);
-  /*-z-index: 1;
-  position: relative;
-  &:hover {
-      &::after{
-          opacity: 1;
-      }
-  }
-  &::after {
-      content: "";
-      opacity: 0;
-      z-index: -1;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      cursor: pointer;
-      background-color: $color-sixth;
-  }*/
+.btn:hover {
+  background-color: linear-gradient(173deg, #ff79da 0%, #d66cdb 50%, #ab5edc 75%, #9b59de 100%);
 }
 
 .restaurants-pic {
@@ -63,13 +45,9 @@ textarea {
 }
 
 /* MENUS */
-.menu-head img {
-  background-color: green;
-}
-
 .menu-head span {
   margin-left: 1em;
-  background-color: red;
+  margin-right: -1em;
 }
 
 .main-footer {
@@ -227,11 +205,12 @@ textarea {
 .gps {
   background-color: rgba(156, 133, 176, 0.76);
 }
-.gps__gps:nth-child(1) {
+.gps-gps:nth-child(1) {
   font-weight: bold;
   margin: 1em;
+  color: grey;
 }
-.gps__gps:nth-child(1) div:nth-child(2) {
+.gps-gps:nth-child(1) div:nth-child(2) {
   margin-left: 1em;
 }
 .gps-explore {

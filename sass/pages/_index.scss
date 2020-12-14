@@ -1,9 +1,10 @@
 /* GPS*/
 .gps {
     background-color: $color-fith-darken;
-    &__gps:nth-child(1) {
+    &-gps:nth-child(1) {
         font-weight: bold;
         margin: 1em;
+        color: grey;
         & div:nth-child(2) {
             margin-left: 1em;
         }
