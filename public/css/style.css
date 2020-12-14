@@ -138,10 +138,13 @@ textarea {
 .restaurants-thumbnails-thumbnail .logo > i:hover {
   color: #9356DC;
 }
+.restaurants-thumbnails-thumbnail-img {
+  position: relative;
+}
 .restaurants-thumbnails-thumbnail--new {
   position: absolute;
   right: 4em;
-  /*bottom: -7em;*/
+  top: 1px;
   background-color: #99E2D0;
   color: green;
   padding: 0.5em;
@@ -387,6 +390,36 @@ textarea {
   border-bottom: 4px solid #99E2D0;
 }
 
+/* EFFET APPARITION PROGRESSIVE */
+.menu-menus-step {
+  opacity: 0;
+  animation-duration: 2s;
+  animation-name: appear;
+  /* translate: ;*/
+}
+.menu-menus-step:nth-of-type(1) {
+  animation-delay: 0.1s;
+}
+.menu-menus-step:nth-of-type(2) {
+  animation-delay: 0.5s;
+}
+.menu-menus-step:nth-of-type(3) {
+  animation-delay: 1s;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    margin-bottom: 100%;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+    margin-bottom: 0%;
+  }
+}
 /* mediaquery A EXPORTER SAUF :*/
 /* DESKTOP */
 /* DESKTOP */

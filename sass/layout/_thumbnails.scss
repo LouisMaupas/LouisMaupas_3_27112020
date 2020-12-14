@@ -58,10 +58,13 @@
                 }
             }
         }
+        &-img {
+            position: relative;
+        }
         &--new {
             position: absolute;
             right: 4em;
-            /*bottom: -7em;*/
+            top: 1px;
             background-color: $color-third;
             color: green;
             padding: 0.5em;
