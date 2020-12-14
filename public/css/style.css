@@ -161,29 +161,17 @@ textarea {
   background-color: #eae8eb;
   z-index: 1;
   position: relative;
-  transition: all 0.4s ease-in-out;
-  /*
-  &::after {
-      content: "";
-      opacity: 0;
-      z-index: -1;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      cursor: pointer;
-      background-color: $color-fifth;
-  }*/
+  transition: all 0.2s ease-in-out;
 }
 .operation-steps-thumbnail:nth-child(2) {
   margin: 1em 1em;
 }
-.operation-steps-thumbnail:hover {
-  transition: all 0.4s ease-in-out;
-  background-color: #c9abee;
+.operation-steps-thumbnail:hover > .operation-steps-thumbnail__icon {
+  transition: all 0.1s ease-in-out;
+  color: #9356DC;
 }
 .operation-steps-thumbnail__logo {
+  order: -1;
   display: flex;
   align-items: center;
   justify-content: center;

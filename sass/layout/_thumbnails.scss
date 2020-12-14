@@ -63,27 +63,16 @@
     background-color: $color-fourth;
     z-index: 1;
     position: relative;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.2s ease-in-out;
     &:nth-child(2){
         margin: 1em 1em;
     }
-    &:hover {
-        transition: all 0.4s ease-in-out;
-        background-color: $color-primary-lighten;
-    }/*
-    &::after {
-        content: "";
-        opacity: 0;
-        z-index: -1;
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        cursor: pointer;
-        background-color: $color-fifth;
-    }*/
+    &:hover > .operation-steps-thumbnail__icon {
+        transition: all 0.1s ease-in-out;
+        color: $color-primary;
+    }
     &__logo {
+        order: -1;
         display: flex;
         align-items: center;
         justify-content: center;
