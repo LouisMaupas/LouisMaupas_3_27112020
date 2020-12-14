@@ -108,6 +108,9 @@ textarea {
   border-bottom-right-radius: 15px;
   cursor: pointer;
 }
+.restaurants-thumbnails-thumbnail a {
+  text-decoration: none;
+}
 .restaurants-thumbnails-thumbnail img {
   object-fit: cover;
   width: 300px;
@@ -116,6 +119,7 @@ textarea {
   border-top-right-radius: 15px;
 }
 .restaurants-thumbnails-thumbnail--txt {
+  color: black;
   padding-top: 0.4em;
   line-height: 1.3em;
   margin-left: 1em;
@@ -127,7 +131,22 @@ textarea {
 .restaurants-thumbnails-thumbnail .logo {
   display: flex;
   align-items: center;
-  color: #000;
+}
+.restaurants-thumbnails-thumbnail .logo > i {
+  color: black;
+}
+.restaurants-thumbnails-thumbnail .logo > i:hover {
+  color: #9356DC;
+}
+.restaurants-thumbnails-thumbnail--new {
+  position: absolute;
+  right: 4em;
+  /*bottom: -7em;*/
+  background-color: #99E2D0;
+  color: green;
+  padding: 0.5em;
+  font-weight: bold;
+  border-radius: 3px;
 }
 
 /* STEPS */

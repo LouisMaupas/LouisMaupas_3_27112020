@@ -28,6 +28,9 @@
         border-bottom-left-radius: $radius-thumbnails-restaurants;
         border-bottom-right-radius: $radius-thumbnails-restaurants;
         cursor: pointer;
+        & a {
+            text-decoration: none;
+        }
         & img {
             object-fit: cover;
             width: 300px;
@@ -36,6 +39,7 @@
             border-top-right-radius: $radius-thumbnails-restaurants;
         }
         &--txt{
+            color: black;
             padding-top: 0.4em;
             line-height: 1.3em;
             margin-left: 1em;
@@ -47,7 +51,22 @@
         & .logo {
             display: flex;
             align-items: center;
-            color: #000;
+            & > i {
+                color: black;
+                &:hover {
+                    color: $color-primary;
+                }
+            }
+        }
+        &--new {
+            position: absolute;
+            right: 4em;
+            /*bottom: -7em;*/
+            background-color: $color-third;
+            color: green;
+            padding: 0.5em;
+            font-weight: bold;
+            border-radius: 3px;
         }
     }
 
