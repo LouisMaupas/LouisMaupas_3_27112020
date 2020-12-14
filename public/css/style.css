@@ -94,6 +94,10 @@ textarea {
 .main-footer ul li i {
   margin-right: 0.5em;
 }
+.main-footer a {
+  text-decoration: none;
+  color: white;
+}
 
 /* RESTAURANTS */
 /*
@@ -145,6 +149,7 @@ textarea {
 .restaurants-thumbnails-thumbnail .logo {
   display: flex;
   align-items: center;
+  color: #000;
 }
 
 /* STEPS */
@@ -156,24 +161,27 @@ textarea {
   background-color: #eae8eb;
   z-index: 1;
   position: relative;
+  transition: all 0.4s ease-in-out;
+  /*
+  &::after {
+      content: "";
+      opacity: 0;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      cursor: pointer;
+      background-color: $color-fifth;
+  }*/
 }
 .operation-steps-thumbnail:nth-child(2) {
   margin: 1em 1em;
 }
-.operation-steps-thumbnail:hover::after {
-  opacity: 1;
-}
-.operation-steps-thumbnail::after {
-  content: "";
-  opacity: 0;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  cursor: pointer;
-  background-color: rgba(206, 195, 216, 0.76);
+.operation-steps-thumbnail:hover {
+  transition: all 0.4s ease-in-out;
+  background-color: #c9abee;
 }
 .operation-steps-thumbnail__logo {
   display: flex;
@@ -192,6 +200,14 @@ textarea {
 }
 .operation-steps-thumbnail__txt {
   font-weight: bold;
+}
+.operation-steps-thumbnail__icon {
+  color: grey;
+  transition: all 0.4s ease-in-out;
+}
+.operation-steps-thumbnail__icon:hover {
+  transition: all 0.4s ease-in-out;
+  color: #9356DC;
 }
 
 /* MENUS */
@@ -307,6 +323,38 @@ textarea {
     align-items: center;
   }
 }
+/* laoding page */
+/* https://thecodeplayer.com/walkthrough/pure-css-cheeseburger */
+.burger {
+  width: 250px;
+}
+
+.bun-top {
+  height: 100px;
+  border-radius: 125px 125px 125px 125px/75px 75px 25px 25px;
+  background: #dd8c3c;
+}
+
+.cheese {
+  height: 200px;
+  width: 200px;
+  background: #ff0;
+  transform: scale(0.7, 0.3) rotate(-45deg);
+}
+
+.steak {
+  height: 75px;
+  border-radius: 125px 125px 125px 125px/25px 25px 25px 25px;
+  background: #732626;
+}
+
+.bun-bottom {
+  background: #dd8c3c;
+  height: 75px;
+  border-radius: 125px 125px 125px 125px/25px 25px 35px 35px;
+}
+
+@keyframes {}
 .container {
   border: 1px solid red;
 }
@@ -342,12 +390,15 @@ textarea {
   align-self: center;
   max-width: 550px;
 }
-.menu-menus-step__title {
-  border-bottom: 4px solid #2edddd;
-}
 .menu button {
   align-self: center;
   width: 200px;
+}
+
+.underligne {
+  margin-top: 4px;
+  width: 40px;
+  border-bottom: 4px solid #99E2D0;
 }
 
 /* mediaquery A EXPORTER SAUF :*/

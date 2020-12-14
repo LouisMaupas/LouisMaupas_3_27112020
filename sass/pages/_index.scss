@@ -1,6 +1,6 @@
 /* GPS*/
 .gps {
-    background-color: $color-sixth;
+    background-color: $color-fith-darken;
     &__gps:nth-child(1) {
         font-weight: bold;
         margin: 1em;
@@ -92,3 +92,50 @@
         align-items: center;
     }
 }
+
+
+/* laoding page */ 
+/* https://thecodeplayer.com/walkthrough/pure-css-cheeseburger */
+
+.burger {
+	width: 250px;
+}
+
+.bun-top {
+    height: 100px;
+	border-radius: 125px 125px 125px 125px/75px 75px 25px 25px;
+    background: rgb(221, 140, 60);
+}
+
+.cheese {
+    height: 200px;
+	width: 200px;
+    background: #ff0;
+    transform: scale(0.7, 0.3) rotate(-45deg);
+}
+
+.steak {
+    height: 75px;
+    border-radius: 125px 125px 125px 125px/25px 25px 25px 25px;
+    background: #732626;
+}
+
+.bun-bottom {
+    background: #dd8c3c;
+    height: 75px;
+	border-radius: 125px 125px 125px 125px/25px 25px 35px 35px;
+}
+
+
+@keyframes {
+    0% {
+
+    }
+    50% {
+
+    }
+    100% {
+
+    }
+}
+
