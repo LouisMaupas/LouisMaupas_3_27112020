@@ -131,7 +131,6 @@
     }
     &-thubmnail {
     background-color: white;
-    border: 1px solid black;
     padding-left: 0.25em;
     margin: 0.5em auto;
     border-top-left-radius: $radius-thumbnails-restaurants;
@@ -156,20 +155,25 @@
         margin: -1px;
         width: 10%;
         border-radius: 0px 15px 15px 0px;
-        background-color: blueviolet;
+        background-color: $color-third;
         display: flex;
         order: 3;
+        transition: transform .5s;
         & i {
             align-self: center;
             margin-left: auto;
             margin-right: auto;
         }
     }
-    &:hover + .menu-menus-step-thubmnail__toggle {
-        transform: scale(2);
-        transition: all ease-in-out 1s;
+    &:hover + .menu-menus-step-thubmnail_toggle {
+        transform: scale(2 1);
         background-color: brown;
     }
 }
+}
+
+.toggle-icon {
+    color: white;
+    /* a faire rotate*/
 }
 

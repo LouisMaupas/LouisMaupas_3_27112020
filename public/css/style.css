@@ -207,7 +207,6 @@ textarea {
 }
 .menu-menus-step-thubmnail {
   background-color: white;
-  border: 1px solid black;
   padding-left: 0.25em;
   margin: 0.5em auto;
   border-top-left-radius: 15px;
@@ -233,19 +232,24 @@ textarea {
   margin: -1px;
   width: 10%;
   border-radius: 0px 15px 15px 0px;
-  background-color: blueviolet;
+  background-color: #99E2D0;
   display: flex;
   order: 3;
+  transition: transform 0.5s;
 }
 .menu-menus-step-thubmnail_toggle i {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
 }
-.menu-menus-step-thubmnail:hover + .menu-menus-step-thubmnail__toggle {
-  transform: scale(2);
-  transition: all ease-in-out 1s;
+.menu-menus-step-thubmnail:hover + .menu-menus-step-thubmnail_toggle {
+  transform: scale(2 1);
   background-color: brown;
+}
+
+.toggle-icon {
+  color: white;
+  /* a faire rotate*/
 }
 
 /* GPS*/
@@ -417,9 +421,10 @@ textarea {
 
 /* EFFET APPARITION PROGRESSIVE */
 .menu-menus-step {
-  opacity: 1;
+  opacity: 0;
   animation-duration: 2s;
   animation-name: appear;
+  animation-fill-mode: forwards;
 }
 .menu-menus-step:nth-of-type(1) {
   animation-delay: 0.1s;
@@ -435,10 +440,6 @@ textarea {
   0% {
     opacity: 0;
     margin-bottom: 100%;
-  }
-  1% {
-    opacity: 0;
-    margin-bottom: 99%;
   }
   50% {
     opacity: 0.5;
