@@ -48,7 +48,7 @@
 
 /* EFFET APPARITION PROGRESSIVE */
 .menu-menus-step {
-    opacity: 0;
+    opacity: 1;
     animation-duration: 2s;
     animation-name: appear;
     &:nth-of-type(1){

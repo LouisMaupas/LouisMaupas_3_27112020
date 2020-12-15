@@ -132,8 +132,6 @@
     &-thubmnail {
     background-color: white;
     border: 1px solid black;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
     padding-left: 0.25em;
     margin: 0.5em auto;
     border-top-left-radius: $radius-thumbnails-restaurants;
@@ -141,9 +139,36 @@
     border-bottom-left-radius: $radius-thumbnails-restaurants;
     border-bottom-right-radius: $radius-thumbnails-restaurants;
     width: 93%;
+    &_dish-name{
+        padding-top: 0.5em;
+    }
+    &_dish-details{
+        padding-bottom: 0.5em;
+    }
     &_price {
         align-self: flex-end;
-        margin-right: 1em;
+        margin-right: 0.1em;
+        padding-bottom: 0.5em;
+    }
+    &_toggle {
+        height: auto;
+        padding: 0;
+        margin: -1px;
+        width: 10%;
+        border-radius: 0px 15px 15px 0px;
+        background-color: blueviolet;
+        display: flex;
+        order: 3;
+        & i {
+            align-self: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    &:hover + .menu-menus-step-thubmnail__toggle {
+        transform: scale(2);
+        transition: all ease-in-out 1s;
+        background-color: brown;
     }
 }
 }
