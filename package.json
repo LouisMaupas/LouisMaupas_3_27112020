@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/LouisMaupas/ohmyfood/issues"
   },
-  "homepage": "https://github.com/LouisMaupas/ohmyfood#readme"
+  "homepage": "https://github.com/LouisMaupas/ohmyfood#readme",
+  "dependencies": {
+    "postcss": "^8.2.1"
+  }
 }
