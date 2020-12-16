@@ -250,11 +250,15 @@ textarea {
   padding-right: 20px;
   padding-bottom: 15px;
 }
+.menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail_toggle {
+  width: 60px;
+  /* a FAIRE ROTATE + MARCHE PAS*/
+}
 .menu-menus-step-thubmnail_toggle {
   height: auto;
   padding: 0;
   margin: -1px;
-  width: 40px;
+  width: 0px;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
   display: flex;
@@ -262,15 +266,14 @@ textarea {
   transition: all 0.5s;
   overflow: hidden;
 }
+.menu-menus-step-thubmnail_toggle:hover {
+  width: 60px;
+}
 .menu-menus-step-thubmnail_toggle i {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
   color: white;
-  /* a FAIRE ROTATE */
-}
-.menu-menus-step-thubmnail:hover + .menu-menus-step-thubmnail i {
-  width: 0px;
 }
 
 /* GPS*/
