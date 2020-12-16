@@ -238,9 +238,11 @@ textarea {
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 3px;
+  width: 240px;
 }
 .menu-menus-step-thubmnail_dish-details {
   padding-bottom: 15px;
+  font-size: small;
 }
 .menu-menus-step-thubmnail_price {
   font-weight: bold;
