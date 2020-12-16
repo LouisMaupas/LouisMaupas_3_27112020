@@ -1,13 +1,167 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://kit.fontawesome.com/9405848609.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link href="../public/css/flexbox.css" rel="stylesheet">
     <link href="../public/css/style.css" rel="stylesheet">
     <title>Ohmyfood! - Menu La note enchantée</title>
 </head>
-
-
-
+<body>
+    <div class="container">
+        <!--HEADER-->
+        <header class="menu-head df ai-c jc-sb">
+            <a href="../index.html">
+                <span><i class="fas fa-arrow-left"></i></span>
+            </a>
+            <div class="menu-head">
+                <img src="../public/img/logo/ohmyfood2x.svg" alt="Logo de Oh my food !"/>
+            </div>
+            <div></div>
+        </header>
+       <!--TOP PHOTO-->
+       <div class="df jc-sb">
+           <div class="restaurants-pic">
+                <img src="../public/img/restaurants/delice.jpg" alt="Image du restaurant">
+            </div>
+       </div>
+       <!--MENU-->
+       <div class="menu df fd-c">
+           <div class="menu-title df">
+               <div class="title">Le délice des sens</div>
+               <div><i class="far fa-heart"></i></div>
+           </div>
+           <div class="menu-menus">
+                <div class="menu-menus-step">
+                    <div class="menu-menus-step__title">
+                        ENTREES
+                        <div class="underligne"></div>
+                    </div>
+                    <div class="menu-menus-step-thubmnail df jc-sb">
+                        <div class="menu-menus-step-thubmnail_toggle" >
+                            <i class="fas fa-check-circle toggle-icon"></i>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_dish">
+                            <div class="menu-menus-step-thubmnail_dish-name">Tartare de thon</div>
+                            <div class="menu-menus-step-thubmnail_dish-details">Assaisonnée au yuzu</div>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_price">25€</div>
+                    </div>
+                    <div class="menu-menus-step-thubmnail df jc-sb">
+                        <div class="menu-menus-step-thubmnail_toggle" >
+                            <i class="fas fa-check-circle toggle-icon"></i>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_dish">
+                            <div class="menu-menus-step-thubmnail_dish-name">Bouchée de homard croustillant </div>
+                            <div class="menu-menus-step-thubmnail_dish-details">Et sa farandole de petits légumes</div>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_price">35€</div>
+                    </div>
+                    <div class="menu-menus-step-thubmnail df jc-sb">
+                        <div class="menu-menus-step-thubmnail_toggle" >
+                            <i class="fas fa-check-circle toggle-icon"></i>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_dish">
+                            <div class="menu-menus-step-thubmnail_dish-name">Velouté de cèpes </div>
+                            <div class="menu-menus-step-thubmnail_dish-details">Aux truffes</div>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_price">20€</div>
+                    </div>
+                </div>
+                <!-- PLATS-->
+                <div class="menu-menus-step">
+                    <div class="menu-menus-step__title">
+                        PLATS
+                        <div class="underligne"></div>
+                    </div>
+                    <div class="menu-menus-step-thubmnail df jc-sb">
+                        <div class="menu-menus-step-thubmnail_toggle" >
+                            <i class="fas fa-check-circle toggle-icon"></i>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_dish">
+                            <div class="menu-menus-step-thubmnail_dish-name">Poulet rôti aux herbes de Provence </div>
+                            <div class="menu-menus-step-thubmnail_dish-details">Et sa crème de truffe</div>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_price">40€</div>
+                    </div>
+                    <div class="menu-menus-step-thubmnail df jc-sb">
+                        <div class="menu-menus-step-thubmnail_toggle" >
+                            <i class="fas fa-check-circle toggle-icon"></i>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_dish">
+                            <div class="menu-menus-step-thubmnail_dish-name">Langouste rôtie</div>
+                            <div class="menu-menus-step-thubmnail_dish-details">Et ses légumes de saison</div>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_price">35€</div>
+                    </div>
+                    <div class="menu-menus-step-thubmnail df jc-sb">
+                        <div class="menu-menus-step-thubmnail_toggle" >
+                            <i class="fas fa-check-circle toggle-icon"></i>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_dish">
+                            <div class="menu-menus-step-thubmnail_dish-name">Côte de boeuf Angus</div>
+                            <div class="menu-menus-step-thubmnail_dish-details">Et sa purée de panais</div>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_price">44€</div>
+                    </div>
+                </div>
+                <!--DESSERTS-->                
+                <div class="menu-menus-step">
+                    <div class="menu-menus-step__title">
+                        DESSERTS
+                        <div class="underligne"></div>
+                    </div>
+                    <div class="menu-menus-step-thubmnail df jc-sb">
+                        <div class="menu-menus-step-thubmnail_toggle" >
+                            <i class="fas fa-check-circle toggle-icon"></i>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_dish">
+                            <div class="menu-menus-step-thubmnail_dish-name">Farandole de desserts</div>
+                            <div class="menu-menus-step-thubmnail_dish-details">Du chef</div>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_price">18€</div>
+                    </div>
+                    <div class="menu-menus-step-thubmnail df jc-sb">
+                        <div class="menu-menus-step-thubmnail_toggle" >
+                            <i class="fas fa-check-circle toggle-icon"></i>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_dish">
+                            <div class="menu-menus-step-thubmnail_dish-name">Crème brulée </div>
+                            <div class="menu-menus-step-thubmnail_dish-details">Revisitée</div>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_price">22€</div>
+                    </div>
+                    <div class="menu-menus-step-thubmnail df jc-sb">
+                        <div class="menu-menus-step-thubmnail_toggle" >
+                            <i class="fas fa-check-circle toggle-icon"></i>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_dish">
+                            <div class="menu-menus-step-thubmnail_dish-name">Tiramisu </div>
+                            <div class="menu-menus-step-thubmnail_dish-details">À la noisette</div>
+                        </div>
+                        <div class="menu-menus-step-thubmnail_price">23€</div>
+                    </div>
+                </div>   
+            </div>
+            <!--BTN-->
+           <button class="btn btn--gradient">Commander</button>
+       </div>
+        <!--FOOTER-->
+        <footer class="main-footer df fd-c">
+            <div class="main-footer__title title">
+                OhMyFood
+            </div>
+            <ul class="df fd-c">
+                <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                <li>Mentions légales</li>
+                <li><a href="mailto:ohmyfood@mail.fr" class="footer__contact">Contact</a></li>
+            </ul>
+        </footer>
+    </div>
+</body>
 </html>
