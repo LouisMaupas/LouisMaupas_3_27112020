@@ -1,6 +1,6 @@
 /* GPS*/
 .gps {
-    background-color: $color-fith-darken;
+    background-color: $color-fourth-darken;
     &-gps:nth-child(1) {
         font-weight: bold;
         margin: 1em;
@@ -10,12 +10,19 @@
         }
     }
     &-explore {
-        background-color: $color-fifth;
+        background-color: $color-fourth;
         & > div {
             color: rgb(87, 84, 84);
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        & h1 {
+            width: 70%;
+            font-size: 25px;
+            font-weight: 700;
+            padding-top: 30px;
         }
         & h1, & div {
-            width: 80%;
             text-align: center;
         }
         & button {

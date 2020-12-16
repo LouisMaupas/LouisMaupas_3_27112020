@@ -7,7 +7,16 @@
 }
 
 /* MENUS */ 
-.menu-head span {
-    margin-left: 1em;
-    margin-right: -1em;
+.menu-head {
+    margin-top: 8px;
+    margin-bottom: 5px;
+    & span {
+        padding-left: 1.5em;
+        margin-right: -1em;
+        & i {
+            font-size: 20px; 
+            color: rgba(32, 30, 30, 0.925);
+        }
+    }
+
 }

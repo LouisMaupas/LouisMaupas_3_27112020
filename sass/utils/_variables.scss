@@ -1,16 +1,21 @@
+/* CAHIER DES CHARGES */
 $color-primary: #9356DC;
 $color-primary-lighten: lighten($color-primary, 20%);
 $color-secondary: #FF79DA;
 $color-secondary-lighten: lighten($color-secondary, 20%);
-
 $color-third: #99E2D0;
-$color-fourth: rgb(234, 232, 235);
-$color-fifth: rgba(206, 195, 216, 0.76); 
-$color-fith-darken: darken($color-fifth, 20%);
 
-$color-dark: #252525f6;
+/* LE GRIS */
+$color-fourth: #f9f9f9;
+$color-fourth-lighten: lighten($color-fourth, 20%); 
+$color-fourth-darken: darken($color-fourth, 13%); 
 
-$radius-thumbnails-restaurants: 15px;
+/* AUTRES COULEURS DE BLOCS */
+$color-black: #252525f6;
 
+/* BOUTONS */
 $color-btn: linear-gradient(173deg, #ff79da 0%, #d66cdb 50%, #ab5edc 75%, #9b59dc 100%);
 $color-btn-hover: linear-gradient(173deg, #ff79da 0%, #d66cdb 50%, #ab5edc 75%, #9b59de 100%);
+
+/* AUTRES VAR */
+$radius-thumbnails-restaurants: 15px;
