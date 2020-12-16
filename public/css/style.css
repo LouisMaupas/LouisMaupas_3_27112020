@@ -30,9 +30,11 @@ textarea {
   color: white;
   border: none;
   background: linear-gradient(173deg, #ff79da 0%, #d66cdb 50%, #ab5edc 75%, #9b59dc 100%);
+  box-shadow: 5px 15px 25px -4px rgba(0, 0, 0, 0.6);
 }
 .btn:hover {
-  background-color: linear-gradient(173deg, #ff79da 0%, #d66cdb 50%, #ab5edc 75%, #9b59de 100%);
+  opacity: 0.9;
+  box-shadow: 11px 17px 26px 0px rgba(0, 0, 0, 0.77);
 }
 
 .restaurants-pic {
@@ -124,6 +126,9 @@ textarea {
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
   cursor: pointer;
+}
+.restaurants-thumbnails-thumbnail:hover {
+  transform: scale(1.15);
 }
 .restaurants-thumbnails-thumbnail a {
   text-decoration: none;
@@ -259,7 +264,6 @@ textarea {
 .menu-menus-step-thubmnail_toggle {
   height: auto;
   padding: 0;
-  margin: -1px;
   width: 0px;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;

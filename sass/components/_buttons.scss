@@ -7,8 +7,10 @@
     color: white;
     border: none;
     background: $color-btn;
+    box-shadow: 5px 15px 25px -4px rgba(0,0,0,0.6);
     &:hover {
-        background-color: $color-btn-hover;
+        opacity: 0.9;
+        box-shadow: 11px 17px 26px 0px rgba(0,0,0,0.77);
     }
     }
 

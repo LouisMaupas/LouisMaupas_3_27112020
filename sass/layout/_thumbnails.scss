@@ -28,6 +28,9 @@
         border-bottom-left-radius: $radius-thumbnails-restaurants;
         border-bottom-right-radius: $radius-thumbnails-restaurants;
         cursor: pointer;
+        &:hover {
+            transform: scale(1.15);
+        }
         & a {
             text-decoration: none;
         }
