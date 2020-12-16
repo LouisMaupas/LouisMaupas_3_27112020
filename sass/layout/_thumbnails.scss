@@ -139,6 +139,7 @@
     border-bottom-left-radius: $radius-thumbnails-restaurants;
     border-bottom-right-radius: $radius-thumbnails-restaurants;
     width: 93%;
+    cursor: pointer;
     &_dish-name{
         padding-top: 0.5em;
     }
@@ -167,17 +168,13 @@
             align-self: center;
             margin-left: auto;
             margin-right: auto;
+            color: white;
+            /* a FAIRE ROTATE */
         }
     }
-    &:hover + .menu-menus-step-thubmnail_toggle {
-        transform: scale(2 1);
-        background-color: brown;
+    &:hover + & i {
+        width: 0px;
     }
 }
-}
-
-.toggle-icon {
-    color: white;
-    /* a faire rotate*/
 }
 
