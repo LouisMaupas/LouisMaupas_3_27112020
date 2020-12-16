@@ -63,8 +63,8 @@
         }
         &--new {
             position: absolute;
-            right: 4em;
-            top: 1px;
+            right: 15px;
+            top: 15px;
             background-color: $color-third;
             color: green;
             padding: 0.5em;
@@ -124,7 +124,6 @@
 }}
 
 /* MENUS */ 
-
 .menu-menus-step {
     width: 378px;
     &__title {

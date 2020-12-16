@@ -147,8 +147,8 @@ textarea {
 }
 .restaurants-thumbnails-thumbnail--new {
   position: absolute;
-  right: 4em;
-  top: 1px;
+  right: 15px;
+  top: 15px;
   background-color: #99E2D0;
   color: green;
   padding: 0.5em;
