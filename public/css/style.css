@@ -225,7 +225,7 @@ textarea {
 }
 .menu-menus-step-thubmnail {
   background-color: white;
-  padding-left: 0.25em;
+  padding-left: 10px;
   margin: 0.5em auto;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
@@ -235,17 +235,20 @@ textarea {
   cursor: pointer;
 }
 .menu-menus-step-thubmnail_dish-name {
-  padding-top: 0.5em;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 3px;
 }
 .menu-menus-step-thubmnail_dish-details {
-  padding-bottom: 0.5em;
+  padding-bottom: 15px;
 }
 .menu-menus-step-thubmnail_price {
+  font-weight: bold;
   align-self: flex-end;
-  padding-bottom: 0.5em;
   flex: 1 1;
   text-align: right;
-  padding-right: 10px;
+  padding-right: 20px;
+  padding-bottom: 15px;
 }
 .menu-menus-step-thubmnail_toggle {
   height: auto;
@@ -407,6 +410,7 @@ textarea {
   border-top-right-radius: 30px;
 }
 .menu-title {
+  padding-top: 10px;
   font-size: 1.8em;
   justify-content: space-around;
 }
@@ -421,6 +425,10 @@ textarea {
 .menu-menus-step {
   align-self: center;
   max-width: 550px;
+  margin-top: 20px;
+}
+.menu-menus-step-thubmnail {
+  margin-bottom: 20px;
 }
 .menu button {
   align-self: center;
@@ -431,6 +439,7 @@ textarea {
   margin-top: 4px;
   width: 40px;
   border-bottom: 4px solid #99E2D0;
+  margin-bottom: 15px;
 }
 
 /* EFFET APPARITION PROGRESSIVE */

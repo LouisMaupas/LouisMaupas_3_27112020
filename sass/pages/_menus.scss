@@ -13,6 +13,7 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     &-title {
+        padding-top: 10px;
         font-size: 1.8em;
         justify-content: space-around;
     }
@@ -26,6 +27,10 @@
         &-step {
         align-self: center;
         max-width: 550px;
+        margin-top: 20px;
+        &-thubmnail {
+            margin-bottom: 20px;
+        }
         }    
     }
     & button {
@@ -39,6 +44,7 @@
     margin-top: 4px;
     width: 40px;
     border-bottom: 4px solid $color-third;
+    margin-bottom: 15px;
 }
 
 
