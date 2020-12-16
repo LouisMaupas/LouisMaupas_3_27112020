@@ -1,3 +1,7 @@
+html, body {
+  margin: 0;
+}
+
 body {
   font-family: "Roboto", sans-serif;
 }
@@ -162,6 +166,7 @@ textarea {
   z-index: 1;
   position: relative;
   transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 .operation-steps-thumbnail:nth-child(2) {
   margin: 1em 1em;
@@ -223,19 +228,22 @@ textarea {
 }
 .menu-menus-step-thubmnail_price {
   align-self: flex-end;
-  margin-right: 0.1em;
   padding-bottom: 0.5em;
+  flex: 1 1;
+  text-align: right;
+  padding-right: 10px;
 }
 .menu-menus-step-thubmnail_toggle {
   height: auto;
   padding: 0;
   margin: -1px;
-  width: 10%;
+  width: 40px;
   border-radius: 0px 15px 15px 0px;
   background-color: #99E2D0;
   display: flex;
   order: 3;
-  transition: transform 0.5s;
+  transition: all 0.5s;
+  overflow: hidden;
 }
 .menu-menus-step-thubmnail_toggle i {
   align-self: center;
@@ -330,12 +338,6 @@ textarea {
 }
 /* MOBILE */
 @media (max-width: 705px) {
-  .container {
-    max-width: 380px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .operation-steps {
     flex-direction: column;
     align-items: center;
@@ -370,11 +372,6 @@ textarea {
   background: #dd8c3c;
   height: 75px;
   border-radius: 125px 125px 125px 125px/25px 25px 35px 35px;
-}
-
-@keyframes {}
-.container {
-  border: 1px solid red;
 }
 
 .restaurants-pic img {
@@ -450,10 +447,5 @@ textarea {
     margin-bottom: 0%;
   }
 }
-/* mediaquery A EXPORTER SAUF :*/
-/* DESKTOP */
-/* DESKTOP */
-/* PAD */
-/* MOBILE */
 
 /*# sourceMappingURL=style.css.map */

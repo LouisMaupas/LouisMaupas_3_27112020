@@ -86,6 +86,7 @@
     z-index: 1;
     position: relative;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
     &:nth-child(2){
         margin: 1em 1em;
     }
@@ -146,19 +147,22 @@
     }
     &_price {
         align-self: flex-end;
-        margin-right: 0.1em;
         padding-bottom: 0.5em;
+        flex: 1 1;
+        text-align: right;
+        padding-right: 10px;
     }
     &_toggle {
         height: auto;
         padding: 0;
         margin: -1px;
-        width: 10%;
+        width: 40px;
         border-radius: 0px 15px 15px 0px;
         background-color: $color-third;
         display: flex;
         order: 3;
-        transition: transform .5s;
+        transition: all .5s;
+        overflow: hidden;
         & i {
             align-self: center;
             margin-left: auto;

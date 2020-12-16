@@ -81,13 +81,7 @@
 
 
  /* MOBILE */
- @media (max-width: 705px){
-    .container {
-        max-width: 380px;
-        margin-left: auto;
-        margin-right: auto;
-        }
-    
+ @media (max-width: 705px){  
     .operation-steps { // A LAISSER DANS CETTE PAGE
         flex-direction: column;
         align-items: center;
@@ -126,17 +120,3 @@
     height: 75px;
 	border-radius: 125px 125px 125px 125px/25px 25px 35px 35px;
 }
-
-
-@keyframes {
-    0% {
-
-    }
-    50% {
-
-    }
-    100% {
-
-    }
-}
-
