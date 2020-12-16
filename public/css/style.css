@@ -47,6 +47,23 @@ textarea {
   object-fit: cover;
 }
 
+.logo-two {
+  color: #9356DC;
+  opacity: 0;
+}
+
+.logo {
+  color: black;
+  opacity: 1;
+}
+.logo:hover + .logo-two {
+  transition: all 0.5s;
+  opacity: 1;
+}
+.logo :hover {
+  opacity: 0;
+}
+
 /*INDEX */
 .main-head {
   display: flex;
@@ -128,7 +145,7 @@ textarea {
   cursor: pointer;
 }
 .restaurants-thumbnails-thumbnail:hover {
-  transform: scale(1.15);
+  box-shadow: 5px 5px 24px 6px rgba(147, 86, 220, 0.62);
 }
 .restaurants-thumbnails-thumbnail a {
   text-decoration: none;
@@ -150,15 +167,17 @@ textarea {
 .restaurants-thumbnails-thumbnail--name {
   font-weight: bold;
 }
+.restaurants-thumbnails-thumbnail--not-img {
+  position: absolute;
+}
 .restaurants-thumbnails-thumbnail .logo {
   display: flex;
   align-items: center;
 }
-.restaurants-thumbnails-thumbnail .logo > i {
-  color: black;
-}
-.restaurants-thumbnails-thumbnail .logo > i:hover {
-  color: #9356DC;
+.restaurants-thumbnails-thumbnail .logo-two {
+  position: relative;
+  top: 15px;
+  right: 16px;
 }
 .restaurants-thumbnails-thumbnail-img {
   position: relative;

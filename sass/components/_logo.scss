@@ -1,0 +1,15 @@
+.logo-two {
+    color: $color-primary;
+    opacity: 0;
+}
+.logo {
+    color: black;
+    opacity: 1;
+    &:hover + .logo-two {
+        transition: all 0.5s;
+        opacity: 1;
+    }
+    & :hover {
+        opacity: 0;
+    }
+}

@@ -29,7 +29,7 @@
         border-bottom-right-radius: $radius-thumbnails-restaurants;
         cursor: pointer;
         &:hover {
-            transform: scale(1.15);
+            box-shadow: 5px 5px 24px 6px rgba(147,86,220,0.62);
         }
         & a {
             text-decoration: none;
@@ -51,15 +51,17 @@
         &--name {
             font-weight: bold;
         }
+        &--not-img {
+            position: absolute;
+        }
         & .logo {
             display: flex;
             align-items: center;
-            & > i {
-                color: black;
-                &:hover {
-                    color: $color-primary;
-                }
-            }
+        }
+        & .logo-two {
+            position: relative;
+            top: 15px;
+            right: 16px;
         }
         &-img {
             position: relative;
