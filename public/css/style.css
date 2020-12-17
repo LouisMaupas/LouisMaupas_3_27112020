@@ -208,8 +208,12 @@ textarea {
 .operation-steps-thumbnail:nth-child(2) {
   margin: 1em 1em;
 }
+.operation-steps-thumbnail__icon {
+  color: grey;
+  transition: all 0.2s ease-in-out;
+}
 .operation-steps-thumbnail:hover > .operation-steps-thumbnail__icon {
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
   color: #9356DC;
 }
 .operation-steps-thumbnail__logo {
@@ -230,14 +234,6 @@ textarea {
 }
 .operation-steps-thumbnail__txt {
   font-weight: bold;
-}
-.operation-steps-thumbnail__icon {
-  color: grey;
-  transition: all 0.4s ease-in-out;
-}
-.operation-steps-thumbnail__icon:hover {
-  transition: all 0.4s ease-in-out;
-  color: #9356DC;
 }
 
 /* MENUS */
