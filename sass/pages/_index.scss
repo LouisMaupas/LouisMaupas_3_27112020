@@ -37,7 +37,6 @@
     margin-left: 1.5em;
 }
 
-
 /* RESTAURANTS */
 #restaurants {
     background-color: $color-fourth;
@@ -59,9 +58,6 @@
     justify-content: center;
     gap: 2.1em;
 }
-
-
-
 
 /* mediaquery A EXPORTER SAUF :*/
 /* DESKTOP */ 
@@ -86,7 +82,6 @@
         }
 }
 
-
  /* MOBILE */
  @media (max-width: 705px){  
     .operation-steps { // A LAISSER DANS CETTE PAGE
@@ -95,9 +90,30 @@
     }
 }
 
-
 /* laoding page */ 
 /* https://thecodeplayer.com/walkthrough/pure-css-cheeseburger */
+
+
+/*
+.load {
+    animation-duration: 3s;
+    position: absolute;
+    width: 100%;
+    height: 1600px;
+    z-index: 10001;
+    background: black;
+    opacity: 0.8;
+}
+
+@keyframes load {
+    0% { 
+    background: black;
+    cursor: wait;
+    }
+    100% { 
+    background: none;
+    }
+  }
 
 .burger {
 	width: 250px;
@@ -127,3 +143,4 @@
     height: 75px;
 	border-radius: 125px 125px 125px 125px/25px 25px 35px 35px;
 }
+*/

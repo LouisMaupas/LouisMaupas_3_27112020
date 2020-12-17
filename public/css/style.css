@@ -374,35 +374,56 @@ textarea {
 }
 /* laoding page */
 /* https://thecodeplayer.com/walkthrough/pure-css-cheeseburger */
+/*
+.load {
+    animation-duration: 3s;
+    position: absolute;
+    width: 100%;
+    height: 1600px;
+    z-index: 10001;
+    background: black;
+    opacity: 0.8;
+}
+
+@keyframes load {
+    0% { 
+    background: black;
+    cursor: wait;
+    }
+    100% { 
+    background: none;
+    }
+  }
+
 .burger {
-  width: 250px;
+	width: 250px;
 }
 
 .bun-top {
-  height: 100px;
-  border-radius: 125px 125px 125px 125px/75px 75px 25px 25px;
-  background: #dd8c3c;
+    height: 100px;
+	border-radius: 125px 125px 125px 125px/75px 75px 25px 25px;
+    background: rgb(221, 140, 60);
 }
 
 .cheese {
-  height: 200px;
-  width: 200px;
-  background: #ff0;
-  transform: scale(0.7, 0.3) rotate(-45deg);
+    height: 200px;
+	width: 200px;
+    background: #ff0;
+    transform: scale(0.7, 0.3) rotate(-45deg);
 }
 
 .steak {
-  height: 75px;
-  border-radius: 125px 125px 125px 125px/25px 25px 25px 25px;
-  background: #732626;
+    height: 75px;
+    border-radius: 125px 125px 125px 125px/25px 25px 25px 25px;
+    background: #732626;
 }
 
 .bun-bottom {
-  background: #dd8c3c;
-  height: 75px;
-  border-radius: 125px 125px 125px 125px/25px 25px 35px 35px;
+    background: #dd8c3c;
+    height: 75px;
+	border-radius: 125px 125px 125px 125px/25px 25px 35px 35px;
 }
-
+*/
 .restaurants-pic {
   width: 100%;
 }
