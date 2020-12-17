@@ -204,6 +204,7 @@ textarea {
   position: relative;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.4);
 }
 .operation-steps-thumbnail:nth-child(2) {
   margin: 1em 1em;
@@ -234,6 +235,9 @@ textarea {
 }
 .operation-steps-thumbnail__txt {
   font-weight: bold;
+}
+.operation-steps-thumbnail:hover {
+  transform: scale(1.1);
 }
 
 /* MENUS */
