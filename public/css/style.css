@@ -403,6 +403,9 @@ textarea {
   border-radius: 125px 125px 125px 125px/25px 25px 35px 35px;
 }
 
+.restaurants-pic {
+  width: 100%;
+}
 .restaurants-pic img {
   z-index: -1;
   position: relative;

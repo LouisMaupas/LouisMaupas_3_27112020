@@ -1,9 +1,12 @@
-.restaurants-pic img {
+.restaurants-pic {
+    width: 100%;
+    img {
         z-index: -1;
         position: relative;
         max-height: 700px; 
         object-fit: cover;
-}
+    }
+} 
 
 .menu {
     padding-top: 1em;
