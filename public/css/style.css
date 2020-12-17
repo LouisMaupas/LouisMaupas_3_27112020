@@ -248,6 +248,9 @@ textarea {
 .menu-menus-step-thubmnail_dish-details {
   padding-bottom: 15px;
   font-size: small;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 246px;
 }
 .menu-menus-step-thubmnail_price {
   font-weight: bold;
@@ -259,7 +262,9 @@ textarea {
 }
 .menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail_toggle {
   width: 60px;
-  /* a FAIRE ROTATE + MARCHE PAS*/
+}
+.menu-menus-step-thubmnail:hover .menu-menus-step-thubmnail_toggle-icon {
+  transform: rotate(180deg);
 }
 .menu-menus-step-thubmnail_toggle {
   height: auto;

@@ -134,6 +134,9 @@
     &_dish-details{
         padding-bottom: 15px;
         font-size: small;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 246px;
     }
     &_price {
         font-weight: bold;
@@ -145,7 +148,9 @@
     }
     &:hover > &_toggle {
         width: 60px;
-        /* a FAIRE ROTATE + MARCHE PAS*/
+    }
+    &:hover &_toggle-icon {
+        transform: rotate(180deg);
     }
     &_toggle {
         height: auto;
