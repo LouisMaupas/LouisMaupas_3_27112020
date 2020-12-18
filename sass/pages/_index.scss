@@ -104,25 +104,15 @@
     right: 0px;
     top: 0px;
     bottom: 0px;
+    background: black;
+    z-index: 10001;
+    opacity: 0.99;
 }
 
 @keyframes loading {
-    0% { 
-    z-index: 10001;
-    background: black;
-    opacity: 0.9;
-    }
-    99% {
-    z-index: 10001;
-    background: black;
-    opacity: 0.9;
-    }
     100% { 
-        z-index: 10001;
-        background: black;
-        opacity: 0.9;
-        visibility: hidden;
-        display: none;
+    visibility: hidden;
+    display: none;
     }
 }
 
