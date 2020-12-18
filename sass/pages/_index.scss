@@ -71,6 +71,9 @@
         display: flex;
         justify-content: center;
     }
+    .load {
+        bottom: -200px;
+    }
 }
 
 /* PAD */
@@ -79,7 +82,7 @@
         max-width: 800px;
         margin-left: auto;
         margin-right: auto;
-        }
+    }     
 }
 
  /* MOBILE */
@@ -92,55 +95,129 @@
 
 /* laoding page */ 
 /* https://thecodeplayer.com/walkthrough/pure-css-cheeseburger */
-
-
-/*
 .load {
-    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-duration: 3.5s;
+    animation-name: loading;
     position: absolute;
-    width: 100%;
-    height: 1600px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+}
+
+@keyframes loading {
+    0% { 
     z-index: 10001;
     background: black;
-    opacity: 0.8;
-}
-
-@keyframes load {
-    0% { 
+    opacity: 0.9;
+    }
+    99% {
+    z-index: 10001;
     background: black;
-    cursor: wait;
+    opacity: 0.9;
     }
     100% { 
-    background: none;
+        z-index: 10001;
+        background: black;
+        opacity: 0.9;
+        visibility: hidden;
+        display: none;
     }
-  }
+}
 
 .burger {
-	width: 250px;
+    width: 250px;
+    margin: auto;
+    &-txt{
+        color: $color-primary;
+        text-align: center;
+        margin-top: 1em;
+        animation-fill-mode: forwards;
+        position: relative;
+        animation-name: txt;
+        animation-duration: 0.9s;
+        animation-iteration-count: infinite;
+        animation-delay: 0.75s;
+    }
+    &-bun-top {
+        height: 100px;
+        border-radius: 125px 125px 125px 125px/75px 75px 25px 25px;
+        background: $color-bun;
+        animation-fill-mode: forwards;
+        position: relative;
+        animation-name: top;
+        animation-duration: 3s;
+        z-index: 4;
+    }
+    &-cheese {
+        left: 20px;    
+        height: 200px;
+        width: 200px;
+        background: $color-cheese;
+        transform: scale(1, 0.3) rotate(45deg);
+        animation-fill-mode: forwards;
+        position: relative;
+        animation-name: cheese;
+        animation-duration: 3s;
+        z-index: 3;
+    }
+    &-steak {
+        height: 75px;
+        border-radius: 125px 125px 125px 125px/25px 25px 25px 25px;
+        background: #732626;
+        animation-fill-mode: forwards;
+        position: relative;
+        animation-name: steak;
+        animation-duration: 3s;
+        z-index: 2;
+    }
+    &-bun-bottom {
+        background: $color-bun;
+        height: 75px;
+        border-radius: 125px 125px 125px 125px/25px 25px 35px 35px;
+        animation: bottom;
+        animation-fill-mode: forwards;
+        z-index: 1;
+    }
+}
+@keyframes steak {
+    from { 
+        top: 0px;
+    }
+    to { 
+        top: 50px;
+    }
 }
 
-.bun-top {
-    height: 100px;
-	border-radius: 125px 125px 125px 125px/75px 75px 25px 25px;
-    background: rgb(221, 140, 60);
+@keyframes cheese {
+    from { 
+        top: 0px;
+    }
+    to { 
+        top: 180px;
+    }
 }
 
-.cheese {
-    height: 200px;
-	width: 200px;
-    background: #ff0;
-    transform: scale(0.7, 0.3) rotate(-45deg);
+@keyframes top {
+    from { 
+        top: 0px;
+    }
+    to { 
+        top: 290px;
+    }
 }
 
-.steak {
-    height: 75px;
-    border-radius: 125px 125px 125px 125px/25px 25px 25px 25px;
-    background: #732626;
+
+@keyframes txt {
+    0% { 
+    opacity: 1; 
+    }
+    50% {
+    opacity: 0; 
+    }
+    100% { 
+    opacity: 1; 
+    }
 }
 
-.bun-bottom {
-    background: #dd8c3c;
-    height: 75px;
-	border-radius: 125px 125px 125px 125px/25px 25px 35px 35px;
-}
-*/
