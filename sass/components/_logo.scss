@@ -1,15 +1,84 @@
+/* TEST AVEC VISIBILITY HIDDEN */
 .logo-two {
     color: $color-primary;
-    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    right: 16px;
 }
-.logo {
+
+.logo-one {
     color: black;
-    opacity: 1;
     &:hover + .logo-two {
-        transition: all 0.5s;
-        opacity: 1;
-    }
-    & :hover {
-        opacity: 0;
+        transition: all 3s;
+        visibility: visible;
     }
 }
+
+
+
+
+
+/* TEST AVEC Z-INDEX */
+/* TEST SUR LES 3 PREMIERES VIGNETTES */ 
+/*
+.logo-two {
+    color: $color-primary;
+    z-index: -1;
+    position: relative;
+    right: 16px;
+}
+
+.logo-one {
+    color: black;
+    &:hover + .logo-two {
+        z-index: 0;
+        transition: all 0.1s;
+    }
+}
+*/
+
+
+
+
+
+
+
+
+/* AVEC PSEUDO ELEMENTS ET FONTAWESOME*/
+/* TEST SUR LA 4EME VIGNETTE */
+/*
+.logo-one::before {
+    content: "\f004";
+    color: black;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    opacity: 1;
+    transition: all 0.1s ease;
+    &:hover{
+        color: green;
+    }
+}
+
+.logo-one::after {
+    content: "\f004";
+    color: red;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    opacity: 0.5;
+    transition: all 0.1s ease;
+    &:hover{
+        color: green;
+    }
+}
+
+
+.logo-one:hover + ::after {
+    color: green;
+    transition: all 0.1s ease;
+}
+
+.logo-one:hover {
+    color: green;
+    transition: all 0.1s ease;
+}
+*/

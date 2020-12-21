@@ -48,23 +48,78 @@ textarea {
   object-fit: cover;
 }
 
+/* TEST AVEC VISIBILITY HIDDEN */
 .logo-two {
   color: #9356DC;
-  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  right: 16px;
 }
 
-.logo {
+.logo-one {
   color: black;
-  opacity: 1;
 }
-.logo:hover + .logo-two {
-  transition: all 0.5s;
-  opacity: 1;
-}
-.logo :hover {
-  opacity: 0;
+.logo-one:hover + .logo-two {
+  transition: all 3s;
+  visibility: visible;
 }
 
+/* TEST AVEC Z-INDEX */
+/* TEST SUR LES 3 PREMIERES VIGNETTES */
+/*
+.logo-two {
+    color: $color-primary;
+    z-index: -1;
+    position: relative;
+    right: 16px;
+}
+
+.logo-one {
+    color: black;
+    &:hover + .logo-two {
+        z-index: 0;
+        transition: all 0.1s;
+    }
+}
+*/
+/* AVEC PSEUDO ELEMENTS ET FONTAWESOME*/
+/* TEST SUR LA 4EME VIGNETTE */
+/*
+.logo-one::before {
+    content: "\f004";
+    color: black;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 400;
+    opacity: 1;
+    transition: all 0.1s ease;
+    &:hover{
+        color: green;
+    }
+}
+
+.logo-one::after {
+    content: "\f004";
+    color: red;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    opacity: 0.5;
+    transition: all 0.1s ease;
+    &:hover{
+        color: green;
+    }
+}
+
+
+.logo-one:hover + ::after {
+    color: green;
+    transition: all 0.1s ease;
+}
+
+.logo-one:hover {
+    color: green;
+    transition: all 0.1s ease;
+}
+*/
 /*INDEX */
 .main-head {
   display: flex;
@@ -152,15 +207,6 @@ textarea {
 .restaurants-thumbnails-thumbnail--not-img {
   position: absolute;
 }
-.restaurants-thumbnails-thumbnail .logo {
-  display: flex;
-  align-items: center;
-}
-.restaurants-thumbnails-thumbnail .logo-two {
-  position: relative;
-  top: 15px;
-  right: 16px;
-}
 .restaurants-thumbnails-thumbnail-img {
   position: relative;
 }
@@ -225,6 +271,7 @@ textarea {
 /* MENUS */
 .menu-menus-step {
   width: 378px;
+  transition: all 0.2s ease-in-out;
 }
 .menu-menus-step__title {
   margin-left: 0.5em;
@@ -264,8 +311,12 @@ textarea {
 .menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail_toggle {
   width: 60px;
 }
-.menu-menus-step-thubmnail:hover .menu-menus-step-thubmnail_toggle-icon {
-  transform: rotate(180deg);
+.menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail_toggle-icon {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -o-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 .menu-menus-step-thubmnail_toggle {
   height: auto;
@@ -383,7 +434,6 @@ textarea {
   }
 }
 /* laoding page */
-/* https://thecodeplayer.com/walkthrough/pure-css-cheeseburger */
 .load {
   animation-fill-mode: forwards;
   animation-duration: 3.5s;
