@@ -49,21 +49,22 @@ textarea {
 }
 
 /* TEST AVEC VISIBILITY HIDDEN */
+/*
 .logo-two {
-  color: #9356DC;
-  visibility: hidden;
-  position: relative;
-  right: 16px;
+    color: $color-primary;
+    visibility: hidden;
+    position: relative;
+    right: 16px;
 }
 
 .logo-one {
-  color: black;
+    color: black;
+    &:hover + .logo-two {
+        transition: all 3s;
+        visibility: visible;
+    }
 }
-.logo-one:hover + .logo-two {
-  transition: all 3s;
-  visibility: visible;
-}
-
+*/
 /* TEST AVEC Z-INDEX */
 /* TEST SUR LES 3 PREMIERES VIGNETTES */
 /*
