@@ -117,6 +117,7 @@
     border-bottom-right-radius: $radius-thumbnails-restaurants;
     width: 93%;
     cursor: pointer;
+    overflow: hidden;
     &_dish-name{
         font-weight: bold;
         padding-top: 10px;
@@ -125,7 +126,7 @@
     }
     &_dish-details{
         padding-bottom: 15px;
-        font-size: small;
+        font-size: 12px;
         overflow: hidden;
         text-overflow: ellipsis;
         width: 246px;
@@ -138,8 +139,14 @@
         padding-right: 20px;
         padding-bottom: 15px;
     }
+    & .toggle-icon {
+        transition: all 0.5s;
+    }
     &:hover > &_toggle {
         width: 60px;
+        & > i {
+            transform: rotate(360deg);
+        }
     }
     &:hover > &_toggle-icon {
         -moz-transform: rotate(360deg);
@@ -147,6 +154,8 @@
         -o-transform: rotate(360deg);
         -ms-transform: rotate(360deg);
         transform: rotate(360deg);
+        background-color: brown;
+        color: brown;
     }
     &_toggle {
         height: auto;
@@ -157,7 +166,6 @@
         display: flex;
         order: 3;
         transition: all .5s;
-        overflow: hidden;
         &:hover {
             width: 60px;
         }

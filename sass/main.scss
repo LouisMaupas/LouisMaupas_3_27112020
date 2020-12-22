@@ -1,21 +1,13 @@
 @import "./utils/variables";
-@import "./utils/functions";
-@import "./utils/mixins";
-@import "./utils/extensions";
-@import "./utils/keyframes";
 
 @import "./base/base";
 @import "./base/typography";
 
 @import "./components/buttons";
-@import "./components/restaurants-pic";
 @import "./components/logo";
 
 @import "./layout/header";
 @import "./layout/footer";
-@import "./layout/nav";
-@import "./layout/container";
-@import "./layout/form";
 @import "./layout/thumbnails";
 
 

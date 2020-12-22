@@ -16,12 +16,6 @@ h1, h2, h3, .title {
   font-family: "Shrikhand", sans-serif;
 }
 
-textarea {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-size: 1rem;
-}
-
 .btn {
   cursor: pointer;
   font-size: 1.5rem;
@@ -36,16 +30,6 @@ textarea {
 .btn:hover {
   opacity: 0.9;
   box-shadow: 11px 17px 26px 0px rgba(0, 0, 0, 0.77);
-}
-
-.restaurants-pic {
-  width: auto;
-  height: auto;
-}
-.restaurants-pic img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
 }
 
 /* TEST AVEC VISIBILITY HIDDEN */
@@ -287,6 +271,7 @@ textarea {
   border-bottom-right-radius: 15px;
   width: 93%;
   cursor: pointer;
+  overflow: hidden;
 }
 .menu-menus-step-thubmnail_dish-name {
   font-weight: bold;
@@ -296,7 +281,7 @@ textarea {
 }
 .menu-menus-step-thubmnail_dish-details {
   padding-bottom: 15px;
-  font-size: small;
+  font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 246px;
@@ -309,8 +294,14 @@ textarea {
   padding-right: 20px;
   padding-bottom: 15px;
 }
+.menu-menus-step-thubmnail .toggle-icon {
+  transition: all 0.5s;
+}
 .menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail_toggle {
   width: 60px;
+}
+.menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail_toggle > i {
+  transform: rotate(360deg);
 }
 .menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail_toggle-icon {
   -moz-transform: rotate(360deg);
@@ -318,6 +309,8 @@ textarea {
   -o-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
   transform: rotate(360deg);
+  background-color: brown;
+  color: brown;
 }
 .menu-menus-step-thubmnail_toggle {
   height: auto;
@@ -328,7 +321,6 @@ textarea {
   display: flex;
   order: 3;
   transition: all 0.5s;
-  overflow: hidden;
 }
 .menu-menus-step-thubmnail_toggle:hover {
   width: 60px;
@@ -548,10 +540,12 @@ textarea {
 }
 .restaurants-pic {
   width: 100%;
+  height: auto;
 }
 .restaurants-pic img {
   z-index: -1;
   position: relative;
+  width: 100%;
   max-height: 700px;
   object-fit: cover;
 }

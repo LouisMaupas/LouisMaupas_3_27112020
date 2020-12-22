@@ -1,9 +1,11 @@
 .restaurants-pic {
     width: 100%;
+    height: auto;
     img {
         z-index: -1;
         position: relative;
-        max-height: 700px; 
+        width: 100%;
+        max-height: 700px;
         object-fit: cover;
     }
 } 
@@ -52,9 +54,6 @@
 
 
 /* EFFET APPARITION PROGRESSIVE */
-
-
-
 @media (max-width: 771px){
     .menu-menus-step {
         opacity: 0;
