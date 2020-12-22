@@ -22,23 +22,24 @@
             border-top-left-radius: $radius-thumbnails-restaurants;
             border-top-right-radius: $radius-thumbnails-restaurants;
         }
-        &--txt{
+        &__txt{
             color: black;
             padding-top: 0.4em;
             line-height: 1.3em;
             margin-left: 1em;
             margin-right: 6em;
         }
-        &--name {
+        &__name {
             font-weight: bold;
+            width: 142px;
         }
-        &--not-img {
+        &__not-img {
             position: absolute;
         }
         &-img {
             position: relative;
         }
-        &--new {
+        &__new {
             position: absolute;
             right: 15px;
             top: 15px;

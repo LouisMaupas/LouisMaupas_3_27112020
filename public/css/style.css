@@ -178,23 +178,24 @@ h1, h2, h3, .title {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.restaurants-thumbnails-thumbnail--txt {
+.restaurants-thumbnails-thumbnail__txt {
   color: black;
   padding-top: 0.4em;
   line-height: 1.3em;
   margin-left: 1em;
   margin-right: 6em;
 }
-.restaurants-thumbnails-thumbnail--name {
+.restaurants-thumbnails-thumbnail__name {
   font-weight: bold;
+  width: 142px;
 }
-.restaurants-thumbnails-thumbnail--not-img {
+.restaurants-thumbnails-thumbnail__not-img {
   position: absolute;
 }
 .restaurants-thumbnails-thumbnail-img {
   position: relative;
 }
-.restaurants-thumbnails-thumbnail--new {
+.restaurants-thumbnails-thumbnail__new {
   position: absolute;
   right: 15px;
   top: 15px;
