@@ -51,22 +51,21 @@ h1, h2, h3, .title {
 */
 /* TEST AVEC Z-INDEX */
 /* TEST SUR LES 3 PREMIERES VIGNETTES */
-/*
 .logo-two {
-    color: $color-primary;
-    z-index: -1;
-    position: relative;
-    right: 16px;
+  color: #9356DC;
+  z-index: -1;
+  position: relative;
+  right: 16px;
 }
 
 .logo-one {
-    color: black;
-    &:hover + .logo-two {
-        z-index: 0;
-        transition: all 0.1s;
-    }
+  color: black;
 }
-*/
+.logo-one:hover + .logo-two {
+  z-index: 0;
+  transition: all 0.1s;
+}
+
 /* AVEC PSEUDO ELEMENTS ET FONTAWESOME*/
 /* TEST SUR LA 4EME VIGNETTE */
 /*
