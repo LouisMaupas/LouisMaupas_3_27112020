@@ -273,20 +273,20 @@ h1, h2, h3, .title {
   cursor: pointer;
   overflow: hidden;
 }
-.menu-menus-step-thubmnail_dish-name {
+.menu-menus-step-thubmnail__dish-name {
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 3px;
   width: 240px;
 }
-.menu-menus-step-thubmnail_dish-details {
+.menu-menus-step-thubmnail__dish-details {
   padding-bottom: 15px;
   font-size: 12px;
   overflow: hidden;
   text-overflow: ellipsis;
   width: 246px;
 }
-.menu-menus-step-thubmnail_price {
+.menu-menus-step-thubmnail__price {
   font-weight: bold;
   align-self: flex-end;
   flex: 1 1;
@@ -297,13 +297,13 @@ h1, h2, h3, .title {
 .menu-menus-step-thubmnail .toggle-icon {
   transition: all 0.5s;
 }
-.menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail_toggle {
+.menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail__toggle {
   width: 60px;
 }
-.menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail_toggle > i {
+.menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail__toggle > i {
   transform: rotate(360deg);
 }
-.menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail_toggle-icon {
+.menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail__toggle-icon {
   -moz-transform: rotate(360deg);
   -webkit-transform: rotate(360deg);
   -o-transform: rotate(360deg);
@@ -312,7 +312,7 @@ h1, h2, h3, .title {
   background-color: brown;
   color: brown;
 }
-.menu-menus-step-thubmnail_toggle {
+.menu-menus-step-thubmnail__toggle {
   height: auto;
   padding: 0;
   width: 0px;
@@ -322,10 +322,10 @@ h1, h2, h3, .title {
   order: 3;
   transition: all 0.5s;
 }
-.menu-menus-step-thubmnail_toggle:hover {
+.menu-menus-step-thubmnail__toggle:hover {
   width: 60px;
 }
-.menu-menus-step-thubmnail_toggle i {
+.menu-menus-step-thubmnail__toggle i {
   align-self: center;
   margin-left: auto;
   margin-right: auto;
