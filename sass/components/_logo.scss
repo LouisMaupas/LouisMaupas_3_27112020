@@ -1,3 +1,44 @@
+.restaurants-thumbnails-thumbnail__logo {
+    width: auto;
+    height: 15px;
+    top: 16px;
+    position: relative;
+    right: 15px;
+    &__logo-two {
+        opacity: 0;
+        position: absolute;
+        color: $color-primary;
+    }
+    &:hover > &__logo-two {
+        opacity: 1;
+        transition: all ease-in-out 1s;
+    }
+}
+
+.logo-one {
+    color: black;
+}
+
+
+/*
+.restaurants-thumbnails-thumbnail__logo {
+    & .logo-one {
+        color: green;
+        &::before {
+            content: "\f004";
+            background: linear-gradient(to top, blue, 1%, red, 100%)
+        }
+        &:hover {
+            background: linear-gradient(to top, blue, 100%, red)
+        }
+    }
+}*/
+
+/* Le problème est que l'icone coeur avec un contour et 
+l'icone coeur fond unis sont 2 icones différents 
++ linear-gradient ne marche pas avec font awesome */
+
+
 /* TEST AVEC VISIBILITY HIDDEN */
 /*
 .logo-two {
@@ -20,7 +61,7 @@
 
 /* TEST AVEC Z-INDEX */
 /* TEST SUR LES 3 PREMIERES VIGNETTES */ 
-
+/*
 .logo-two {
     color: $color-primary;
     z-index: -1;
@@ -35,7 +76,7 @@
         transition: all 0.1s;
     }
 }
-
+*/
 
 
 /* AVEC PSEUDO ELEMENTS ET FONTAWESOME*/
@@ -76,4 +117,3 @@
     transition: all 0.1s ease;
 }
 */
-

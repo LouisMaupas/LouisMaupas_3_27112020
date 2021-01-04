@@ -59,7 +59,7 @@
     gap: 2.1em;
 }
 
-/* mediaquery A EXPORTER SAUF :*/
+/* mediaquery*/
 /* DESKTOP */ 
 @media (min-width: 1415px){
     .container {
@@ -67,7 +67,7 @@
     margin-left: auto;
     margin-right: auto;
     }
-    .operation h2 { // A LAISSER DANS CETTE PAGE
+    .operation h2 {
         display: flex;
         justify-content: center;
     }
@@ -87,7 +87,7 @@
 
  /* MOBILE */
  @media (max-width: 705px){  
-    .operation-steps { // A LAISSER DANS CETTE PAGE
+    .operation-steps {
         flex-direction: column;
         align-items: center;
     }
@@ -154,7 +154,7 @@
     &-steak {
         height: 75px;
         border-radius: 125px 125px 125px 125px/25px 25px 25px 25px;
-        background: #732626;
+        background: $color-steak;
         animation-fill-mode: forwards;
         position: relative;
         animation-name: steak;

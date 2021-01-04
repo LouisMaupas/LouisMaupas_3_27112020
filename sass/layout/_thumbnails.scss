@@ -1,104 +1,103 @@
 /* RESTAURANTS */
 .restaurants-thumbnails-thumbnail {
+    width: 300px;
+    height: 230px;
+    background: white;
+    box-shadow: 0px 0px 11px 5px rgba(155, 144, 144, 0.884);
+    border-top-left-radius: $radius-thumbnails-restaurants;
+    border-top-right-radius: $radius-thumbnails-restaurants;
+    border-bottom-left-radius: $radius-thumbnails-restaurants;
+    border-bottom-right-radius: $radius-thumbnails-restaurants;
+    cursor: pointer;
+    &:hover {
+        box-shadow: 5px 5px 24px 6px rgba(147,86,220,0.62);
+    }
+    & a {
+        text-decoration: none;
+    }
+    & img {
+        object-fit: cover;
         width: 300px;
-        height: 230px;
-        background: white;
-        box-shadow: 0px 0px 11px 5px rgba(155, 144, 144, 0.884);
+        height: 170px;
         border-top-left-radius: $radius-thumbnails-restaurants;
         border-top-right-radius: $radius-thumbnails-restaurants;
-        border-bottom-left-radius: $radius-thumbnails-restaurants;
-        border-bottom-right-radius: $radius-thumbnails-restaurants;
-        cursor: pointer;
-        &:hover {
-            box-shadow: 5px 5px 24px 6px rgba(147,86,220,0.62);
-        }
-        & a {
-            text-decoration: none;
-        }
-        & img {
-            object-fit: cover;
-            width: 300px;
-            height: 170px;
-            border-top-left-radius: $radius-thumbnails-restaurants;
-            border-top-right-radius: $radius-thumbnails-restaurants;
-        }
-        &__txt{
-            color: black;
-            padding-top: 0.4em;
-            line-height: 1.3em;
-            margin-left: 1em;
-            margin-right: 6em;
-        }
-        &__name {
-            font-weight: bold;
-            width: 142px;
-        }
-        &__not-img {
-            position: absolute;
-        }
-        &-img {
-            position: relative;
-        }
-        &__new {
-            position: absolute;
-            right: 15px;
-            top: 15px;
-            background-color: $color-third;
-            color: green;
-            padding: 0.5em;
-            font-weight: bold;
-            border-radius: 3px;
-        }
     }
+    &__not-img {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__txt{
+        color: black;
+        padding-top: 0.4em;
+        line-height: 1.3em;
+        margin-left: 1em;
+    }
+    &__name {
+        font-weight: bold;
+    }
+    &-img {
+        position: relative;
+    }
+    &__new {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background-color: $color-third;
+        color: green;
+        padding: 0.5em;
+        font-weight: bold;
+        border-radius: 3px;
+    }
+}
 
 
 
 /* STEPS */
 .operation {
-    &-steps-thumbnail {
-    width: 280px;
-    height: 27px;
-    border-radius: 15px;
-    padding: 1em;
-    background-color: $color-fourth;
-    z-index: 1;
-    position: relative;
+&-steps-thumbnail {
+width: 280px;
+height: 27px;
+border-radius: 15px;
+padding: 1em;
+background-color: $color-fourth;
+z-index: 1;
+position: relative;
+transition: all 0.2s ease-in-out;
+cursor: pointer;
+box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
+&:nth-child(2){
+    margin: 1em 1em;
+}
+&__icon {
+    color: grey;
     transition: all 0.2s ease-in-out;
-    cursor: pointer;
-    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
-    &:nth-child(2){
-        margin: 1em 1em;
-    }
-    &__icon {
-        color: grey;
-        transition: all 0.2s ease-in-out;
-    }
-    &:hover > .operation-steps-thumbnail__icon {
-        transition: all 0.2s ease-in-out;
-        color: $color-primary;
-    }
-    &__logo {
-        order: -1;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        color: white;
-        background-color: $color-primary;
-        margin-right: 1em;
-        margin-left: -25px;
-    }
-    & i {
-        margin-right: 1em;
-    }  
-    &__txt {
-        font-weight: bold;
-    }
-    &:hover {
-        transform: scale(1.1);
-    }
+}
+&:hover > .operation-steps-thumbnail__icon {
+    transition: all 0.2s ease-in-out;
+    color: $color-primary;
+}
+&__logo {
+    order: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    color: white;
+    background-color: $color-primary;
+    margin-right: 1em;
+    margin-left: -25px;
+}
+& i {
+    margin-right: 1em;
+}  
+&__txt {
+    font-weight: bold;
+}
+&:hover {
+    transform: scale(1.1);
+}
 }}
 
 /* MENUS */ 
@@ -108,75 +107,78 @@
     &__title {
     margin-left: 0.5em;
     }
-    &-thubmnail {
-    background-color: white;
-    padding-left: 10px;
-    margin: 0.5em auto;
-    border-top-left-radius: $radius-thumbnails-restaurants;
-    border-top-right-radius: $radius-thumbnails-restaurants;
-    border-bottom-left-radius: $radius-thumbnails-restaurants;
-    border-bottom-right-radius: $radius-thumbnails-restaurants;
-    width: 93%;
-    cursor: pointer;
-    overflow: hidden;
-    &__dish-name{
-        font-weight: bold;
-        padding-top: 10px;
-        padding-bottom: 3px;
-        width: 240px;
-    }
-    &__dish-details{
-        padding-bottom: 15px;
-        font-size: 12px;
+        &-thubmnail {
+        background-color: white;
+        padding-left: 10px;
+        margin: 0.5em auto;
+        border-top-left-radius: $radius-thumbnails-restaurants;
+        border-top-right-radius: $radius-thumbnails-restaurants;
+        border-bottom-left-radius: $radius-thumbnails-restaurants;
+        border-bottom-right-radius: $radius-thumbnails-restaurants;
+        width: 93%;
+        cursor: pointer;
         overflow: hidden;
-        text-overflow: ellipsis;
-        width: 246px;
-    }
-    &__price {
-        font-weight: bold;
-        align-self: flex-end;
-        flex: 1 1;
-        text-align: right;
-        padding-right: 20px;
-        padding-bottom: 15px;
-    }
-    & .toggle-icon {
-        transition: all 0.5s;
-    }
-    &:hover > &__toggle {
-        width: 60px;
-        & > i {
-            transform: rotate(360deg);
+        &__dish {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            width: auto;
         }
-    }
-    &:hover > &__toggle-icon {
-        -moz-transform: rotate(360deg);
-        -webkit-transform: rotate(360deg);
-        -o-transform: rotate(360deg);
-        -ms-transform: rotate(360deg);
-        transform: rotate(360deg);
-        background-color: brown;
-        color: brown;
-    }
-    &__toggle {
-        height: auto;
-        padding: 0;
-        width: 0px;
-        border-radius: 0px 15px 15px 0px;
-        background-color: $color-third;
-        display: flex;
-        order: 3;
-        transition: all .5s;
-        &:hover {
+        &__dish-name{
+            font-weight: bold;
+            padding-top: 10px;
+            padding-bottom: 3px;
+        }
+        &__dish-details{
+            width: auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        &__price {
+            font-weight: bold;
+            align-self: flex-end;
+            flex: 1 1;
+            text-align: right;
+            padding-right: 20px;
+            padding-bottom: 15px;
+        }
+        & .toggle-icon {
+            transition: all 0.5s;
+        }
+        &:hover > &__toggle {
             width: 60px;
+            & > i {
+                transform: rotate(360deg);
+            }
         }
-        & i {
-            align-self: center;
-            margin-left: auto;
-            margin-right: auto;
-            color: white;
+        &:hover > &__toggle-icon {
+            -moz-transform: rotate(360deg);
+            -webkit-transform: rotate(360deg);
+            -o-transform: rotate(360deg);
+            -ms-transform: rotate(360deg);
+            transform: rotate(360deg);
+            background-color: brown;
+            color: brown;
+        }
+        &__toggle {
+            height: auto;
+            padding: 0;
+            width: 0px;
+            border-radius: 0px 15px 15px 0px;
+            background-color: $color-third;
+            display: flex;
+            order: 3;
+            transition: all .5s;
+            &:hover {
+                width: 60px;
+            }
+            & i {
+                align-self: center;
+                margin-left: auto;
+                margin-right: auto;
+                color: white;
+            }
         }
     }
 }
-}
-

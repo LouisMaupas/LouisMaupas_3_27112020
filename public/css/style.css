@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* CAHIER DES CHARGES */
 /* LE GRIS */
 /* AUTRES COULEURS DE BLOCS */
@@ -32,6 +33,43 @@ h1, h2, h3, .title {
   box-shadow: 11px 17px 26px 0px rgba(0, 0, 0, 0.77);
 }
 
+.restaurants-thumbnails-thumbnail__logo {
+  width: auto;
+  height: 15px;
+  top: 16px;
+  position: relative;
+  right: 15px;
+}
+.restaurants-thumbnails-thumbnail__logo__logo-two {
+  opacity: 0;
+  position: absolute;
+  color: #9356DC;
+}
+.restaurants-thumbnails-thumbnail__logo:hover > .restaurants-thumbnails-thumbnail__logo__logo-two {
+  opacity: 1;
+  transition: all ease-in-out 1s;
+}
+
+.logo-one {
+  color: black;
+}
+
+/*
+.restaurants-thumbnails-thumbnail__logo {
+    & .logo-one {
+        color: green;
+        &::before {
+            content: "\f004";
+            background: linear-gradient(to top, blue, 1%, red, 100%)
+        }
+        &:hover {
+            background: linear-gradient(to top, blue, 100%, red)
+        }
+    }
+}*/
+/* Le problème est que l'icone coeur avec un contour et 
+l'icone coeur fond unis sont 2 icones différents 
++ linear-gradient ne marche pas avec font awesome */
 /* TEST AVEC VISIBILITY HIDDEN */
 /*
 .logo-two {
@@ -51,21 +89,22 @@ h1, h2, h3, .title {
 */
 /* TEST AVEC Z-INDEX */
 /* TEST SUR LES 3 PREMIERES VIGNETTES */
+/*
 .logo-two {
-  color: #9356DC;
-  z-index: -1;
-  position: relative;
-  right: 16px;
+    color: $color-primary;
+    z-index: -1;
+    position: relative;
+    right: 16px;
 }
 
 .logo-one {
-  color: black;
+    color: black;
+    &:hover + .logo-two {
+        z-index: 0;
+        transition: all 0.1s;
+    }
 }
-.logo-one:hover + .logo-two {
-  z-index: 0;
-  transition: all 0.1s;
-}
-
+*/
 /* AVEC PSEUDO ELEMENTS ET FONTAWESOME*/
 /* TEST SUR LA 4EME VIGNETTE */
 /*
@@ -178,19 +217,18 @@ h1, h2, h3, .title {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+.restaurants-thumbnails-thumbnail__not-img {
+  display: flex;
+  justify-content: space-between;
+}
 .restaurants-thumbnails-thumbnail__txt {
   color: black;
   padding-top: 0.4em;
   line-height: 1.3em;
   margin-left: 1em;
-  margin-right: 6em;
 }
 .restaurants-thumbnails-thumbnail__name {
   font-weight: bold;
-  width: 142px;
-}
-.restaurants-thumbnails-thumbnail__not-img {
-  position: absolute;
 }
 .restaurants-thumbnails-thumbnail-img {
   position: relative;
@@ -273,18 +311,22 @@ h1, h2, h3, .title {
   cursor: pointer;
   overflow: hidden;
 }
+.menu-menus-step-thubmnail__dish {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: auto;
+}
 .menu-menus-step-thubmnail__dish-name {
   font-weight: bold;
   padding-top: 10px;
   padding-bottom: 3px;
-  width: 240px;
 }
 .menu-menus-step-thubmnail__dish-details {
-  padding-bottom: 15px;
-  font-size: 12px;
+  width: auto;
   overflow: hidden;
   text-overflow: ellipsis;
-  width: 246px;
+  white-space: nowrap;
 }
 .menu-menus-step-thubmnail__price {
   font-weight: bold;
@@ -393,7 +435,7 @@ h1, h2, h3, .title {
   gap: 2.1em;
 }
 
-/* mediaquery A EXPORTER SAUF :*/
+/* mediaquery*/
 /* DESKTOP */
 @media (min-width: 1415px) {
   .container {
