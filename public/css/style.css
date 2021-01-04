@@ -347,10 +347,6 @@ l'icone coeur fond unis sont 2 icones différents
   transform: rotate(360deg);
 }
 .menu-menus-step-thubmnail:hover > .menu-menus-step-thubmnail__toggle-icon {
-  -moz-transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  -o-transform: rotate(360deg);
-  -ms-transform: rotate(360deg);
   transform: rotate(360deg);
   background-color: brown;
   color: brown;
