@@ -123,6 +123,7 @@ box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
             text-overflow: ellipsis;
             white-space: nowrap;
             width: auto;
+            padding: 0.5em;
         }
         &__dish-name{
             font-weight: bold;
@@ -153,10 +154,6 @@ box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
             }
         }
         &:hover > &__toggle-icon {
-            -moz-transform: rotate(360deg);
-            -webkit-transform: rotate(360deg);
-            -o-transform: rotate(360deg);
-            -ms-transform: rotate(360deg);
             transform: rotate(360deg);
             background-color: brown;
             color: brown;

@@ -316,6 +316,7 @@ l'icone coeur fond unis sont 2 icones différents
   text-overflow: ellipsis;
   white-space: nowrap;
   width: auto;
+  padding: 0.5em;
 }
 .menu-menus-step-thubmnail__dish-name {
   font-weight: bold;
