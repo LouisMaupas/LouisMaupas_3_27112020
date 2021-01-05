@@ -328,6 +328,7 @@ l'icone coeur fond unis sont 2 icones différents
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  font-size: small;
 }
 .menu-menus-step-thubmnail__price {
   font-weight: bold;
@@ -615,7 +616,7 @@ l'icone coeur fond unis sont 2 icones différents
   max-width: 550px;
   margin-top: 20px;
 }
-.menu-menus-step-thubmnail {
+.menu-menus-thubmnail {
   margin-bottom: 20px;
 }
 .menu button {
