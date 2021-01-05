@@ -54,51 +54,52 @@
 
 /* STEPS */
 .operation {
-&-steps-thumbnail {
-width: 280px;
-height: 27px;
-border-radius: 15px;
-padding: 1em;
-background-color: $color-fourth;
-z-index: 1;
-position: relative;
-transition: all 0.2s ease-in-out;
-cursor: pointer;
-box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
-&:nth-child(2){
-    margin: 1em 1em;
-}
-&__icon {
-    color: grey;
+    &-steps-thumbnail {
+    width: 280px;
+    height: 27px;
+    border-radius: 15px;
+    padding: 1em;
+    background-color: $color-fourth;
+    z-index: 1;
+    position: relative;
     transition: all 0.2s ease-in-out;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
+        &:nth-child(2){
+            margin: 1em 1em;
+        }
+        &__icon {
+            color: grey;
+            transition: all 0.2s ease-in-out;
+        }
+        &:hover > .operation-steps-thumbnail__icon {
+            transition: all 0.2s ease-in-out;
+            color: $color-primary;
+        }
+        &__logo {
+            order: -1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
+            width: 20px;
+            border-radius: 50%;
+            color: white;
+            background-color: $color-primary;
+            margin-right: 1em;
+            margin-left: -25px;
+        }
+        & i {
+            margin-right: 1em;
+        }  
+        &__txt {
+            font-weight: bold;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
 }
-&:hover > .operation-steps-thumbnail__icon {
-    transition: all 0.2s ease-in-out;
-    color: $color-primary;
-}
-&__logo {
-    order: -1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    color: white;
-    background-color: $color-primary;
-    margin-right: 1em;
-    margin-left: -25px;
-}
-& i {
-    margin-right: 1em;
-}  
-&__txt {
-    font-weight: bold;
-}
-&:hover {
-    transform: scale(1.1);
-}
-}}
 
 /* MENUS */ 
 .menu-menus-step {
@@ -107,17 +108,17 @@ box-shadow: 5px 5px 15px -1px rgba(0,0,0,0.4);
     &__title {
     margin-left: 0.5em;
     }
-        &-thubmnail {
-        background-color: white;
-        padding-left: 10px;
-        margin: 0.5em auto;
-        border-top-left-radius: $radius-thumbnails-restaurants;
-        border-top-right-radius: $radius-thumbnails-restaurants;
-        border-bottom-left-radius: $radius-thumbnails-restaurants;
-        border-bottom-right-radius: $radius-thumbnails-restaurants;
-        width: 93%;
-        cursor: pointer;
-        overflow: hidden;
+    &-thubmnail {
+    background-color: white;
+    padding-left: 10px;
+    margin: 0.5em auto;
+    border-top-left-radius: $radius-thumbnails-restaurants;
+    border-top-right-radius: $radius-thumbnails-restaurants;
+    border-bottom-left-radius: $radius-thumbnails-restaurants;
+    border-bottom-right-radius: $radius-thumbnails-restaurants;
+    width: 93%;
+    cursor: pointer;
+    overflow: hidden;
         &__dish {
             overflow: hidden;
             text-overflow: ellipsis;
