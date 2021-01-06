@@ -205,7 +205,7 @@ l'icone coeur fond unis sont 2 icones différents
   cursor: pointer;
 }
 .restaurants-thumbnails-thumbnail:hover {
-  box-shadow: 5px 5px 24px 6px rgba(147, 86, 220, 0.62);
+  box-shadow: 5px 5px 24px 6px rgba(0, 0, 0, 0.62);
 }
 .restaurants-thumbnails-thumbnail a {
   text-decoration: none;
@@ -288,7 +288,8 @@ l'icone coeur fond unis sont 2 icones différents
   font-weight: bold;
 }
 .operation-steps-thumbnail:hover {
-  transform: scale(1.1);
+  opacity: 0.9;
+  box-shadow: 11px 17px 26px 0px rgba(0, 0, 0, 0.77);
 }
 
 /* MENUS */
@@ -320,7 +321,7 @@ l'icone coeur fond unis sont 2 icones différents
 }
 .menu-menus-step-thubmnail__dish-name {
   font-weight: bold;
-  padding-top: 10px;
+  padding-top: 3px;
   padding-bottom: 3px;
   width: auto;
   overflow: hidden;
@@ -334,6 +335,7 @@ l'icone coeur fond unis sont 2 icones différents
   text-overflow: ellipsis;
   white-space: nowrap;
   font-size: small;
+  padding-bottom: 5px;
 }
 .menu-menus-step-thubmnail__price {
   font-weight: bold;
@@ -597,7 +599,7 @@ l'icone coeur fond unis sont 2 icones différents
 
 .menu {
   padding-top: 1em;
-  background-color: #d8d8d8;
+  background-color: #fcfcfc;
   margin-top: -4em;
   padding-bottom: 4em;
   border-top-left-radius: 30px;

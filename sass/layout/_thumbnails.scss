@@ -10,7 +10,7 @@
     border-bottom-right-radius: $radius-thumbnails-restaurants;
     cursor: pointer;
     &:hover {
-        box-shadow: 5px 5px 24px 6px rgba(147,86,220,0.62);
+        box-shadow: 5px 5px 24px 6px rgba(0, 0, 0, 0.62);
     }
     & a {
         text-decoration: none;
@@ -96,7 +96,8 @@
             font-weight: bold;
         }
         &:hover {
-            transform: scale(1.1);
+            opacity: 0.9;
+            box-shadow: 11px 17px 26px 0px rgba(0,0,0,0.77);
         }
     }
 }
@@ -128,7 +129,7 @@
         }
         &__dish-name{
             font-weight: bold;
-            padding-top: 10px;
+            padding-top: 3px;
             padding-bottom: 3px;
             width: auto;
             overflow: hidden;
@@ -142,6 +143,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             font-size: small;
+            padding-bottom: 5px;
         }
         &__price {
             font-weight: bold;
