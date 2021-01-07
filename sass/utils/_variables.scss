@@ -1,6 +1,7 @@
 /* CAHIER DES CHARGES */
 $color-primary: #9356DC;
-$color-primary-lighten: lighten($color-primary, 20%);
+$color-primary-lighten: lighten($color-primary, 25%);
+$color-primary-darken: darken($color-primary, 20%);
 $color-secondary: #FF79DA;
 $color-secondary-lighten: lighten($color-secondary, 20%);
 $color-third: #99E2D0;

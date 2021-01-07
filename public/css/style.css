@@ -13,7 +13,7 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, .title {
+.title {
   font-family: "Shrikhand", sans-serif;
 }
 
@@ -266,7 +266,7 @@ l'icone coeur fond unis sont 2 icones différents
 }
 .operation-steps-thumbnail:hover > .operation-steps-thumbnail__icon {
   transition: all 0.2s ease-in-out;
-  color: #9356DC;
+  color: #6023a9;
 }
 .operation-steps-thumbnail__logo {
   order: -1;
@@ -290,6 +290,7 @@ l'icone coeur fond unis sont 2 icones différents
 .operation-steps-thumbnail:hover {
   opacity: 0.9;
   box-shadow: 11px 17px 26px 0px rgba(0, 0, 0, 0.77);
+  background-color: #d7c0f2;
 }
 
 /* MENUS */
